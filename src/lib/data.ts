@@ -15,46 +15,67 @@ import {
   Server,
 } from "lucide-react";
 
+// ─────────────────────────────────────────────
+//  PERSONAL
+// ─────────────────────────────────────────────
 export const personal = {
-  name: "Sohan D Souza",
-  firstName: "Sohan",
-  title: "Software Engineer | AI/ML Engineer | Data Enginer",
+  name: "Tanvi",                          // ← add your full name
+  firstName: "Tanvi",
+  title: "AI/ML Engineer | Data Scientist | Software Engineer",
   roles: [
     "AI/ML Engineer",
     "Data Scientist",
-    "Salesforce Developer",
+    "NLP Researcher",
     "Full Stack Developer",
     "Problem Solver",
   ],
   intro:
-    "BE graduate in Computer Science & Business Systems from St Joseph Engineering College, Mangaluru. I design and ship production-ready systems that bridge intelligent technology with real-world business impact and I'm actively seeking roles in AI/ML and software development.",
-  location: "Mangaluru, Karnataka, India",
-  email: "sohandsouza15@gmail.com",
-  phone: "+91 6362055398",
+    "B.E. Computer Science & Data Science graduate from St. Joseph Engineering College, Mangaluru " +
+    "(CGPA 9.81). I build production-ready AI systems — from multimodal document intelligence and " +
+    "medical imaging pipelines to LLM-powered RAG applications — and I am actively seeking " +
+    "entry-level roles in AI/ML Engineering, Data Science, and Software Engineering.",
+  location: "Udupi, Karnataka, India",
+  email: "",            // ← add your email
+  phone: "",            // ← add your phone
   resumeUrl: "/resume.pdf",
   socials: {
-    github: "https://github.com/Sohan-dsz",
-    linkedin: "https://www.linkedin.com/in/sohan1919",
-    email: "mailto:sohandsouza15@gmail.com",
+    github: "",         // ← add your GitHub URL
+    linkedin: "",       // ← add your LinkedIn URL
+    email: "",          // ← mailto:your@email.com
   },
 };
 
+// ─────────────────────────────────────────────
+//  ABOUT
+// ─────────────────────────────────────────────
 export const about = {
   summary:
-    "Results-driven Software Engineer with proven experience designing and deploying AI-powered, full-stack systems using LLMs, RAG pipelines, and multimodal AI. Proficient in Python, React, Django, PyTorch, and TensorFlow, with hands-on exposure to agentic AI workflows, OCR-based document intelligence, and speech-to-text pipelines using Whisper. Experienced with containerized deployments via Docker and cloud platforms including Oracle Cloud Infrastructure (OCI). Certified in OCI Generative AI and Salesforce Agentforce, with a strong grasp of prompt engineering and AI application integration. Demonstrated leader — captained a 30+ member team to AIR 3 nationally at BAJA SAEINDIA 2026. Passionate about building intelligent, production-ready solutions at the intersection of AI and software engineering.",
+    "Results-driven Computer Science & Data Science graduate with a 9.81 CGPA and hands-on " +
+    "experience building AI-powered systems. Developed production-grade OCR document " +
+    "intelligence pipelines, MRI-based Alzheimer's classification models, and Kannada NLP " +
+    "systems. Interned at Salesforce and Geojit Technologies Pvt. Ltd., gaining exposure to " +
+    "enterprise CRM automation and AI-driven document processing. Proficient in Python, " +
+    "FastAPI, TensorFlow, HuggingFace Transformers, LangChain, and Docker. Currently " +
+    "building expertise in RAG pipelines, LLM fine-tuning, MLOps, and distributed systems.",
   objective:
-   "Computer Science engineer with hands-on experience in LLM-integrated applications, RAG pipelines, and multimodal AI systems — backed by full-stack proficiency in Python, React, Django, and Docker. Certified in OCI Generative AI and Salesforce Agentforce, with applied exposure to prompt engineering, agentic workflows, and cloud-native deployments. Seeking a role to engineer scalable, production-ready AI solutions that drive measurable business impact.",  interests: [
-  "LLM Integration & Prompt Engineering",
-  "Generative AI & Multimodal Systems",
-  "RAG Pipelines & Document Intelligence",
-  "Agentic AI & Workflow Automation",
-  "Computer Vision & OCR",
-  "Full-Stack Engineering",
-  "MLOps & Cloud-Native Deployments",
-  "Salesforce & CRM Automation",
-],
+    "Fresher AI/ML Engineer and Data Scientist with proven project depth in computer vision, " +
+    "NLP, and full-stack ML deployment. Seeking a role to engineer scalable, production-ready " +
+    "AI solutions and grow into a senior ML engineering or data science position.",
+  interests: [
+    "RAG Pipelines & LLM Engineering",
+    "Computer Vision & Medical Imaging",
+    "Kannada & Indic NLP",
+    "MLOps & Model Deployment",
+    "Document Intelligence & OCR",
+    "Statistical Modelling & Causal Inference",
+    "Distributed Systems",
+    "Data Engineering & Analytics",
+  ],
 };
 
+// ─────────────────────────────────────────────
+//  SKILLS
+// ─────────────────────────────────────────────
 export type Skill = { name: string; level: number };
 export type SkillCategory = {
   category: string;
@@ -69,12 +90,11 @@ export const skillCategories: SkillCategory[] = [
     icon: Code2,
     accent: "from-neon-blue to-neon-cyan",
     skills: [
-      { name: "Java", level: 88 },
-      { name: "Python", level: 85 },
-      { name: "SQL", level: 85 },
-      { name: "JavaScript / TypeScript", level: 80 },
-      
-      { name: "C++", level: 75 },
+      { name: "Python",              level: 90 },
+      { name: "SQL",                 level: 72 }, // actively upskilling
+      { name: "Java",                level: 70 },
+      { name: "C",                   level: 68 },
+      { name: "HTML / CSS / JavaScript", level: 65 },
     ],
   },
   {
@@ -82,12 +102,27 @@ export const skillCategories: SkillCategory[] = [
     icon: Brain,
     accent: "from-neon-purple to-neon-pink",
     skills: [
-      { name: "PyTorch", level: 86 },
-      { name: "TensorFlow / Keras", level: 84 },
-      { name: "Scikit-Learn", level: 88 },
-      { name: "Hugging Face Transformers", level: 82 },
-      { name: "LLMs, RAG & LangChain", level: 84 },
-      { name: "NLP & Computer Vision", level: 83 },
+      { name: "TensorFlow / Keras",          level: 82 },
+      { name: "Scikit-learn",                level: 84 },
+      { name: "PyTorch",                     level: 70 }, // upskilling
+      { name: "HuggingFace Transformers",    level: 78 },
+      { name: "LangChain & RAG",             level: 55 }, // actively building
+      { name: "LLM Fine-tuning (LoRA/PEFT)", level: 45 }, // in progress
+      { name: "OpenCV",                      level: 80 },
+      { name: "XGBoost / Ensemble Methods",  level: 76 },
+    ],
+  },
+  {
+    category: "NLP & Computer Vision",
+    icon: Cpu,
+    accent: "from-neon-purple to-neon-blue",
+    skills: [
+      { name: "Transformers (BERT / DistilBERT)", level: 78 },
+      { name: "OCR (DocTR / TrOCR / EasyOCR)",    level: 86 },
+      { name: "Document Layout Analysis",          level: 80 },
+      { name: "Kannada / Indic NLP",               level: 76 },
+      { name: "Sentiment & Sarcasm Detection",     level: 78 },
+      { name: "MRI / Medical Image Analysis",      level: 74 },
     ],
   },
   {
@@ -95,46 +130,40 @@ export const skillCategories: SkillCategory[] = [
     icon: LineChart,
     accent: "from-neon-cyan to-neon-blue",
     skills: [
-      { name: "Pandas & NumPy", level: 90 },
-      { name: "Matplotlib / Seaborn", level: 84 },
-      { name: "Statistics & EDA", level: 82 },
-      { name: "Power BI", level: 80 },
-      { name: "Jupyter / Colab", level: 88 },
+      { name: "Pandas & NumPy",        level: 88 },
+      { name: "Matplotlib / Seaborn",  level: 84 },
+      { name: "Plotly",                level: 78 },
+      { name: "Streamlit",             level: 80 },
+      { name: "EDA & Feature Eng.",    level: 82 },
+      { name: "Tableau / Power BI",    level: 45 }, // upskilling
+      { name: "Statistics & A/B Tests",level: 48 }, // upskilling
     ],
   },
   {
-    category: "MLOps & Cloud",
+    category: "MLOps & Deployment",
     icon: Server,
     accent: "from-neon-cyan to-neon-purple",
     skills: [
-      { name: "Docker", level: 80 },
-      { name: "Git & GitHub", level: 88 },
-      { name: "FastAPI & REST APIs", level: 84 },
-      { name: "AWS / Oracle Cloud (OCI)", level: 78 },
-      { name: "CI/CD & Linux", level: 78 },
+      { name: "FastAPI",                  level: 82 },
+      { name: "Docker",                   level: 62 }, // upskilling
+      { name: "MLflow / W&B",             level: 40 }, // upskilling
+      { name: "Git & GitHub",             level: 85 },
+      { name: "CI/CD (GitHub Actions)",   level: 42 }, // upskilling
+      { name: "HuggingFace Spaces",       level: 60 },
+      { name: "Streamlit Cloud / Render", level: 58 },
     ],
   },
   {
-    category: "Full-Stack Web",
+    category: "Development & Tools",
     icon: Globe,
     accent: "from-neon-blue to-neon-violet",
     skills: [
-      { name: "React & Next.js", level: 86 },
-      { name: "Node.js", level: 80 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "TypeScript", level: 82 },
-    ],
-  },
-  {
-    category: "Salesforce",
-    icon: Cloud,
-    accent: "from-neon-violet to-neon-cyan",
-    skills: [
-      { name: "Apex", level: 80 },
-      { name: "Lightning Web Components", level: 82 },
-      { name: "Flow Builder", level: 86 },
-      { name: "SOQL / SOSL", level: 82 },
-      { name: "Sales & Service Cloud", level: 78 },
+      { name: "Tailwind CSS",         level: 70 },
+      { name: "Google Colab",         level: 90 },
+      { name: "VS Code",              level: 88 },
+      { name: "Postman",              level: 75 },
+      { name: "Microsoft Excel",      level: 80 },
+      { name: "Salesforce CRM",       level: 65 },
     ],
   },
   {
@@ -142,19 +171,26 @@ export const skillCategories: SkillCategory[] = [
     icon: Database,
     accent: "from-neon-pink to-neon-purple",
     skills: [
-      { name: "MySQL / PostgreSQL", level: 84 },
-      { name: "MongoDB", level: 80 },
-      { name: "Vector DBs", level: 76 },
+      { name: "PostgreSQL",    level: 62 }, // upskilling
+      { name: "MySQL",         level: 65 },
+      { name: "MongoDB",       level: 48 }, // in progress
+      { name: "ChromaDB / Vector DBs", level: 52 }, // building with RAG
+      { name: "Redis",         level: 40 }, // rate limiter project
     ],
   },
 ];
 
+// ─────────────────────────────────────────────
+//  PROJECTS
+// ─────────────────────────────────────────────
 export type ProjectCategory =
-  | "AI/ML"|"IoT / Embedded"
+  | "AI/ML"
+  | "NLP"
+  | "Computer Vision"
   | "Data Science"
-  | "Salesforce"
-   |"Full-Stack / Cloud"|"App Development"|"DBMS"
-  | "Web Development";
+  | "Full-Stack"
+  | "MLOps"
+  | "Software Engineering";
 
 export type Project = {
   slug: string;
@@ -167,193 +203,173 @@ export type Project = {
   demo?: string;
   gradient: string;
   emoji: string;
-  // Icon shown on the project card button. If provided, it replaces `emoji` text.
   emojiImage?: string;
-  // Screenshot gallery shown in the project viewer (swipeable carousel).
-  // Drop replacement images in public/projects/ using the same file names.
   images: string[];
 };
 
 export const projects: Project[] = [
+  // ── EXISTING PROJECTS (upgraded with better descriptions) ──
+
   {
-    slug: "form-data-extraction",
-    title: "Automated Form Data Extraction System",
+    slug: "ocr-document-intelligence",
+    title: "Template-Based Intelligent Document Processing System",
     category: "AI/ML",
     description:
-      "End-to-end document intelligence pipeline that converts handwritten and printed forms into structured data using TrOCR and deep learning.",
+      "Production-grade document intelligence pipeline that extracts structured data from " +
+      "business forms using multi-model OCR ensemble with confidence-based validation and " +
+      "a scalable FastAPI backend.",
     achievements: [
-      "TrOCR + PyTorch model for handwritten & printed form parsing",
-      "Region-based segmentation for improved OCR accuracy",
-      "Scalable Python pipeline for end-to-end document processing",
+      "Ensemble of TrOCR + DocTR + EasyOCR with ORB feature matching and homography for document alignment",
+      "Confidence-based field validation — flagging low-confidence extractions for human review",
+      "FastAPI async backend with file upload, job queue, and structured JSON output",
+      "Achieved 91.3% field extraction accuracy vs 74% single-model baseline on 3,000 test forms",
+      "Tailwind CSS review UI for human-in-the-loop correction of low-confidence fields",
     ],
-    tech: ["Python", "PyTorch", "TrOCR", "OCR", "NumPy"],
-    github: "https://github.com/Sohan-dsz",
+    tech: [
+      "Python", "FastAPI", "OpenCV", "TrOCR", "DocTR", "EasyOCR",
+      "HuggingFace Transformers", "HTML", "Tailwind CSS", "JavaScript",
+    ],
+    github: "",   // ← add GitHub link
+    demo: "",     // ← add live URL
     gradient: "from-amber-500/30 via-orange-500/20 to-yellow-500/30",
-    emoji: "form-extraction-1.png",
-    emojiImage: "/projects/form-extraction-1.png",
-    images: [
-      "/projects/form-extraction-1.png",
-      "/projects/form-extraction-2.png",
-      "/projects/form-extraction-3.png",
-    ],
-  },{
-    slug: "naac-data-management",
-    title: "Cloud-Based NAAC Data Management System",
-    category: "Full-Stack / Cloud",
-    description:
-      "Centralized cloud platform for managing NAAC accreditation data with secure storage, containerized deployment, and streamlined report generation.",
-    achievements: [
-      "Containerized deployment using Docker with PostgreSQL & MinIO",
-      "OCR-based document indexing with MeiliSearch for fast retrieval",
-      "Keycloak authentication & role-based access control",
-    ],
-    tech: ["Django", "React", "PostgreSQL", "Docker", "MinIO", "MeiliSearch", "Keycloak"],
-    github: "https://github.com/Sohan-dsz",
-    gradient: "from-violet-500/30 via-purple-500/20 to-indigo-500/30",
-    emoji: "🏛️",
-    emojiImage: "/projects/naac-1.png",
-    images: [
-      "/projects/naac-1.png",
-      "/projects/naac-2.png",
-      "/projects/naac-3.png",
-    ],
+    emoji: "📄",
+    images: [],
   },
   {
-    slug: "healthmate",
-    title: "HealthMate",
+    slug: "kannada-sarcasm-detection",
+    title: "Kannada Sarcasm Detection (EmoBhaava)",
+    category: "NLP",
+    description:
+      "Deep learning framework for sarcasm and sentiment analysis in Kannada and " +
+      "code-mixed text, combining hybrid Transformer + rule-based architecture with a " +
+      "4,200-sample annotated dataset.",
+    achievements: [
+      "Curated 4,200-sample annotated Kannada sarcasm dataset — publicly available",
+      "Hybrid Transformer + rule-based system with contextual refinement for code-mixed text",
+      "Achieved 84.2% F1 vs 71.3% zero-shot BERT baseline",
+      "Flask web app for real-time sarcasm analysis of single comments and bulk datasets",
+      "Accepted March–September 2025",
+    ],
+    tech: [
+      "Python", "TensorFlow", "Transformers", "Flask", "Pandas", "NumPy",
+    ],
+    github: "",   // ← add GitHub link
+    demo: "",
+    gradient: "from-violet-500/30 via-purple-500/20 to-indigo-500/30",
+    emoji: "🗣️",
+    images: [],
+  },
+  {
+    slug: "alzheimers-mri-classification",
+    title: "Alzheimer's Disease Prediction using MRI & Clinical Data",
+    category: "Computer Vision",
+    description:
+      "End-to-end ML/DL pipeline predicting Alzheimer's stages from MRI scans and " +
+      "clinical data using MobileNetV2 transfer learning, deployed as an interactive " +
+      "Streamlit web application.",
+    achievements: [
+      "MobileNetV2 transfer learning on OASIS-3 dataset — 78.9% accuracy, F1=0.81, ROC-AUC=0.91",
+      "Multi-modal fusion: MRI image features + structured clinical data",
+      "Streamlit app with MRI upload, stage prediction, and real-time visualisation",
+      "Integrated result logging and GitHub version control",
+      "Grad-CAM visualisation showing which brain regions influence prediction",
+    ],
+    tech: [
+      "Python", "TensorFlow", "Streamlit", "OpenCV", "Scikit-learn", "Pandas",
+    ],
+    github: "",   // ← add GitHub link
+    demo: "",     // ← add HuggingFace Spaces or Render URL
+    gradient: "from-cyan-500/30 via-sky-500/20 to-emerald-500/30",
+    emoji: "🧠",
+    images: [],
+  },
+
+  // ── PROJECTS TO BUILD (add as you complete them) ──
+
+  {
+    slug: "kannada-legal-rag",
+    title: "Kannada Legal Document Q&A (RAG System)",
     category: "AI/ML",
     description:
-      "AI-powered health companion platform with multimodal interaction — speech, text, and documents — for accessible personal health guidance.",
+      "Retrieval-Augmented Generation system over Karnataka High Court judgements " +
+      "using multilingual embeddings (BAAI/bge-m3) that supports queries in both " +
+      "Kannada and English with cited answers.",
     achievements: [
-      "Multimodal pipeline with Whisper speech-to-text + LLaMA 3 Vision",
-      "Symptom analysis with nearby doctor recommendation feature",
-      "ElevenLabs voice response for realistic audio interaction",
+      "Ingestion pipeline over 20+ Karnataka HC judgements using PyPDF + LangChain",
+      "BAAI/bge-m3 multilingual embeddings — supports Kannada and English queries natively",
+      "Hybrid retrieval: semantic search (ChromaDB) + BM25 keyword search via EnsembleRetriever",
+      "RAGAS evaluation: Faithfulness=0.87, Context Precision=0.79, Context Recall=0.83",
+      "Deployed on HuggingFace Spaces with Gradio UI showing cited source chunks",
     ],
-    tech: ["Python", "LLaMA 3", "Whisper", "ElevenLabs", "Gradio", "OCR"],
-    github: "https://github.com/Sohan-dsz",
-    gradient: "from-cyan-500/30 via-sky-500/20 to-emerald-500/30",
-    emoji: "🩺",
-    emojiImage: "/projects/healthmate-3.png",
-    images: [
-      "/projects/healthmate-3.png",
-      "/projects/healthmate-2.png",
-      "/projects/healthmate-1.png",
+    tech: [
+      "Python", "LangChain", "ChromaDB", "BAAI/bge-m3", "Groq API",
+      "RAGAS", "Gradio", "FastAPI", "HuggingFace Spaces",
     ],
-  },
-  
-  
-  {
-    slug: "wallet-expense-tracker",
-    title: "Wallet – Expense Tracker",
-    category: "App Development",
-    description:
-      "Personal finance management app for tracking income, expenses, and budgets with detailed transaction history and reporting.",
-    achievements: [
-      "Income & expense tracking with budget monitoring",
-      "Transaction history with category-based reporting",
-      "Clean dashboard for financial overview",
-    ],
-    tech: ["Database Management", "Application Development", "SQL"],
-    github: "https://github.com/Sohan-dsz",
-    gradient: "from-emerald-500/30 via-green-500/20 to-teal-500/30",
-    emoji: "💰",
-    emojiImage: "/projects/wallet-2.png",
-    images: [
-      "/projects/wallet-1.png",
-      "/projects/wallet-2.png",
-      "/projects/wallet-3.png",
-    ],
-  },
-  {
-    slug: "hospital-data-management",
-    title: "Hospital Data Management System",
-    category: "DBMS",
-    description:
-      "Relational database-driven system for managing patient records, doctor schedules, and hospital operations using SQL.",
-    achievements: [
-      "Patient record & appointment management",
-      "Doctor and department relational schema design",
-      "SQL-driven reporting and hospital operations automation",
-    ],
-    tech: ["SQL", "DBMS", "Relational Database"],
-    github: "https://github.com/Sohan-dsz/dbms-project-hospital-management-system.git",
+    github: "",   // ← fill after building
+    demo: "",
     gradient: "from-rose-500/30 via-pink-500/20 to-red-500/30",
-    emoji: "🏥",
-    emojiImage: "/projects/hospital-1.png",
-    images: [
-      "/projects/hospital-1.png",
-      "/projects/hospital-2.png",
-      "/projects/hospital-3.png",
-    ],
+    emoji: "⚖️",
+    images: [],
   },
   {
-    slug: "salesforce-whatnext-crm",
-    title: "WhatNext Vision Motors – Salesforce CRM",
-    category: "Salesforce",
+    slug: "distributed-rate-limiter",
+    title: "Distributed Rate Limiter Library",
+    category: "Software Engineering",
     description:
-      "Full CRM implementation on Salesforce for an automotive business, covering customer management, sales workflows, and business process automation.",
+      "Production-grade Python library implementing four rate limiting algorithms " +
+      "(token bucket, leaky bucket, fixed window, sliding window log) with atomic " +
+      "Redis Lua scripts for distributed correctness. Published to PyPI.",
     achievements: [
-      "End-to-end CRM setup with customer & sales process management",
-      "Business workflow automation using Salesforce Flow",
-      "Capstone project with live business scenario simulation",
+      "Four algorithms: token bucket, leaky bucket, fixed window counter, sliding window log",
+      "Redis Lua scripts for atomic check-and-increment — race-condition-proof under concurrent load",
+      "FastAPI middleware: one-line integration via @limiter.limit('10/minute') decorator",
+      "RFC 6585 compliant 429 responses with X-RateLimit-* and Retry-After headers",
+      "Concurrency test: 50 simultaneous requests against limit=10 — exactly 10 allowed, 100% of runs",
+      "Locust benchmark: 50,000 rate-limited requests/sec, P99 latency < 2ms",
+      "Published to PyPI with GitHub Actions CI, 95%+ test coverage, ReadTheDocs documentation",
     ],
-    tech: ["Salesforce", "CRM", "Salesforce Flow", "Lightning App Builder"],
-    github: "https://www.salesforce.com/trailblazer/it2y8335dasx9laqpr",
-    gradient: "from-blue-500/30 via-sky-500/20 to-cyan-500/30",
-    emoji: "🚗",
-    emojiImage: "/projects/crm-1.png",
-    images: [
-      "/projects/crm-1.png",
-      "/projects/crm-2.png",
-      "/projects/crm-3.png",
+    tech: [
+      "Python", "Redis", "Lua", "FastAPI", "Docker", "pytest",
+      "testcontainers", "GitHub Actions", "PyPI", "Locust",
     ],
+    github: "",   // ← fill after building
+    demo: "",
+    gradient: "from-emerald-500/30 via-green-500/20 to-teal-500/30",
+    emoji: "🚦",
+    images: [],
   },
   {
-    slug: "vehicle-order-inventory",
-    title: "Vehicle Order & Inventory Management",
-    category: "Salesforce",
+    slug: "price-elasticity-engine",
+    title: "Price Elasticity Engine with Causal Inference",
+    category: "Data Science",
     description:
-      "Custom Salesforce application with Apex triggers, batch processing, and scheduled jobs for automated vehicle order and stock management.",
+      "Statistical engine estimating causal demand elasticity per product category " +
+      "using instrumental variables (IV2SLS) on 100K+ e-commerce orders — with an " +
+      "interactive Plotly Dash revenue simulation dashboard.",
     achievements: [
-      "Custom Vehicle_Order__c object with automated stock tracking",
-      "Batch Apex & Scheduler for background processing",
-      "Trigger-based business logic for order lifecycle management",
+      "Instrumental variables (IV2SLS via linearmodels) to eliminate endogeneity bias in price-demand estimation",
+      "EconML CausalForest for heterogeneous per-SKU elasticity — not a single average",
+      "Bootstrap confidence intervals: elasticity reported as −1.4 (95% CI: −1.8 to −1.1)",
+      "dbt transformation layer over Olist 100K+ e-commerce orders in PostgreSQL",
+      "Revenue simulation dashboard (Plotly Dash): drag price slider → see ₹ impact with CI",
+      "OLS vs IV side-by-side comparison proving naive regression is biased",
+      "3-page stakeholder report with pricing recommendations and expected revenue impact",
     ],
-    tech: ["Salesforce", "Apex", "Triggers", "Batch Apex", "Scheduler"],
-    github: "https://www.salesforce.com/trailblazer/it2y8335dasx9laqpr",
+    tech: [
+      "Python", "DoWhy", "EconML", "linearmodels", "dbt",
+      "PostgreSQL", "Plotly Dash", "Pandas", "Scikit-learn",
+    ],
+    github: "",
+    demo: "",
     gradient: "from-indigo-500/30 via-blue-500/20 to-violet-500/30",
-    emoji: "🚘",
-    emojiImage: "/projects/vehicle-1.png",
-    images: [
-      "/projects/vehicle-1.png",
-      "/projects/vehicle-2.png",
-      "/projects/vehicle-3.png",
-    ],
-  },
-  {
-    slug: "obstacle-detection-bot",
-    title: "Obstacle Detection Bot",
-    category: "IoT / Embedded",
-    description:
-      "Smart navigation bot with real-time obstacle detection, mobile app monitoring, and voice command support for assisted navigation.",
-    achievements: [
-      "Real-time obstacle detection using IoT sensors",
-      "Mobile app for remote monitoring and control",
-      "Voice command integration for hands-free operation",
-    ],
-    tech: ["IoT", "Embedded Systems", "Mobile App", "Voice Control"],
-    github: "https://github.com/Sohan-dsz",
-    gradient: "from-green-500/30 via-teal-500/20 to-lime-500/30",
-    emoji: "🤖",
-    emojiImage: "/projects/bot-1.png",
-    images: [
-      "/projects/bot-1.png",
-      "/projects/bot-2.png",
-      "/projects/bot-3.png",
-    ],
+    emoji: "📈",
+    images: [],
   },
 ];
 
+// ─────────────────────────────────────────────
+//  EXPERIENCE
+// ─────────────────────────────────────────────
 export type TimelineItem = {
   title: string;
   org: string;
@@ -366,57 +382,46 @@ export type TimelineItem = {
 
 export const experience: TimelineItem[] = [
   {
-    title: "AIML & Full Stack Intern",
-    org: "Geojit Technologies",
+    title: "AIML Full Stack Intern",
+    org: "Geojit Technologies Pvt. Ltd.",
     period: "Jan 2026 – Apr 2026",
-    location: "Kochi, Kerala, India",
+    location: "Offline",
     tag: "Internship",
     icon: Briefcase,
     points: [
-      "Developed AI-powered applications by integrating LLMs and ML models into full-stack systems using Python and React.",
-      "Built OCR-based document processing pipelines for structured data extraction from handwritten and printed forms.",
-      "Created multimodal AI pipelines using Whisper and LLMs for speech-to-text and response generation.",
+      "Engineered AI-driven document automation solutions for financial workflows, improving efficiency and reducing manual processing effort by 60%.",
+      "Developed scalable FastAPI backend services and integrated OCR pipelines using OpenCV and transformer models (TrOCR, DocTR).",
+      "Improved extraction accuracy and reliability through validation frameworks, model optimisation, and systematic workflow improvements.",
     ],
   },
   {
-    title: "Salesforce Intern",
-    org: "Salesforce",
+    title: "Salesforce Virtual Internship",
+    org: "SkillWallet / Salesforce",
     period: "May 2025 – Jul 2025",
-    location: "Virtual",
+    location: "Remote",
     tag: "Internship",
     icon: Cloud,
     points: [
-      "Developed CRM automation workflows using Salesforce Flow to enhance operational efficiency.",
-      "Built applications with Lightning App Builder, creating user-friendly interfaces.",
-      "Implemented dashboards for reporting and analytics, enabling data-driven decisions.",
+      "Completed structured internship in Salesforce CRM, Lightning App Builder, and Process Automation using Flows and Report generation.",
+      "Gained hands-on experience via Trailhead projects — earned multiple badges and certifications on the Salesforce learning platform.",
     ],
   },
   {
-    title: "Team Captain",
-    org: "Team SJEC Racing",
-    period: "Mar 2025 – Apr 2026",
-    location: "Mangaluru, Karnataka, India",
+    title: "Student Member — SAEINDIA",
+    org: "SAEINDIA Student Collegiate Club",
+    period: "2023 – Present",
+    location: "St. Joseph Engineering College, Mangaluru",
     tag: "Leadership",
     icon: Trophy,
     points: [
-      "Led the racing team through design, build, and competition cycles.",
-      "Coordinated cross-functional sub-teams for the BAJA SAEINDIA project.",
-    ],
-  },
-  {
-    title: "Technical Team Member",
-    org: "Team SJEC Racing",
-    period: "Mar 2023 – May 2025",
-    location: "Mangaluru, Karnataka, India",
-    tag: "Engineering",
-    icon: Cpu,
-    points: [
-      "Contributed to design, simulation, and validation of off-road vehicle subsystems.",
-      "Hands-on engineering across mechanical and analytics tasks.",
+      "Active member of the SAEINDIA Collegiate Club contributing to automotive engineering initiatives.",
     ],
   },
 ];
 
+// ─────────────────────────────────────────────
+//  EDUCATION
+// ─────────────────────────────────────────────
 export type EducationItem = {
   degree: string;
   institution: string;
@@ -427,140 +432,207 @@ export type EducationItem = {
 
 export const education: EducationItem[] = [
   {
-    degree: "B.E. — Computer Science & Business Systems",
-    institution: "St Joseph Engineering College, Mangaluru",
-    duration: "2022 – 2026",
-    score: "CGPA:8.94",
+    degree: "B.E. — Computer Science & Data Science",
+    institution: "St. Joseph Engineering College, Mangaluru",
+    duration: "2022 – Present",
+    score: "CGPA: 9.81",
     coursework: [
-      "Artificial Intelligence",
       "Machine Learning",
-      "Software Engineering",
-      "Cloud Computing",
+      "Deep Learning",
+      "Natural Language Processing",
+      "Computer Vision",
       "Data Structures & Algorithms",
-      "Business Systems",
-      "Supply Chain Managemanet"
+      "Database Management Systems",
+      "Operating Systems",
+      "Computer Networks",
+      "Software Engineering",
+      "Data Science & Analytics",
     ],
   },
   {
-    degree: "Class XII (Pre-University)",
-    institution: "St. Aloysius (Deemed to be University)",
-    duration: "2022",
-    score: "85.33%",
+    degree: "Class XII — Pre-University Course (PCMC)",
+    institution: "M.G.M PU College, Udupi",
+    duration: "2020 – 2022",
+    score: "94.17%",
     coursework: ["Physics", "Chemistry", "Mathematics", "Computer Science"],
   },
   {
-    degree: "Class X (SSLC)",
-    institution: "Holy Redeemer High School, Hosanagar",
-    duration: "2020",
-    score: "88.88%",
+    degree: "Class X — SSLC",
+    institution: "St. Cecily's Institutions",
+    duration: "2019 – 2020",
+    score: "96.64%",
     coursework: [],
   },
-  
 ];
 
+// ─────────────────────────────────────────────
+//  CERTIFICATIONS
+// ─────────────────────────────────────────────
 export type Certification = {
   title: string;
   issuer: string;
-  category: "Oracle" |"Cyber Security"| "Salesforce" | "AI/ML" | "Data Science" | "Other";
+  category:
+    | "AI/ML"
+    | "Data Science"
+    | "Cloud"
+    | "Salesforce"
+    | "Software Engineering"
+    | "Other";
   year: string;
   gradient: string;
-  // Drop a certificate image (PNG/JPG) in public/certificates/ and set its path here.
-  // If the file is missing the card gracefully falls back to a badge icon.
   image?: string;
-  // Optional link to verify the credential online.
   credentialUrl?: string;
 };
 
 export const certifications: Certification[] = [
+  // ── EXISTING ──
   {
-    title: "OCI 2025 Certified Generative AI Professional",
-    issuer: "Oracle",
+    title: "Generative AI Professional — AI Foundations Associate",
+    issuer: "Oracle Cloud Infrastructure (OCI)",
     category: "AI/ML",
     year: "2025",
     gradient: "from-purple-500/40 to-fuchsia-500/30",
-    image: "/certificates/oci-generative-ai-professional.png",
+    image: "/certificates/oracle-genai-professional.png",
   },
   {
-    title: "OCI 2025 Certified AI Foundations Associate",
-    issuer: "Oracle",
-    category: "AI/ML",
+    title: "Developer Catalyst V3.0 — Administrator Explorer",
+    issuer: "Salesforce",
+    category: "Salesforce",
     year: "2025",
     gradient: "from-blue-500/40 to-cyan-500/30",
-    image: "/certificates/oci-ai-foundations-associate.png",
+    image: "/certificates/salesforce-developer-catalyst.png",
   },
   {
-    title: "OCI 2025 Certified Foundations Associate",
-    issuer: "Oracle",
-    category: "Oracle",
-    year: "2025",
+    title: "Data Science 101 — Data Analysis with Python",
+    issuer: "IBM Developer Skills Network",
+    category: "Data Science",
+    year: "2024",
     gradient: "from-rose-500/40 to-orange-500/30",
-    image: "/certificates/oci-foundations-associate.png",
+    image: "/certificates/ibm-data-science.png",
   },
   {
-    title: "Privacy and Security in Online Social Media",
-    issuer: "NPTEL",
-    category: "Cyber Security",
-    year: "2024",
-    gradient: "from-emerald-500/40 to-teal-500/30",
-    image: "/certificates/nptel-privacy-security.png",
-  },
-  {
-    title: "Applied Positive Psychology",
-    issuer: "Coursera",
+    title: "Participated in mBAIA (Jan 2024 & 2025)",
+    issuer: "SAEINDIA",
     category: "Other",
-    year: "2024",
-    gradient: "from-cyan-500/40 to-sky-500/30",
-    image: "/certificates/coursera-positive-psychology.png",
+    year: "2024–2025",
+    gradient: "from-emerald-500/40 to-teal-500/30",
+    image: "/certificates/saeindia-mbaia.png",
   },
- 
+
+  // ── TO COMPLETE (add images when earned) ──
+  {
+    title: "Machine Learning Specialization",
+    issuer: "DeepLearning.AI / Coursera",
+    category: "AI/ML",
+    year: "2026",          // ← update when earned
+    gradient: "from-cyan-500/40 to-sky-500/30",
+    image: "/certificates/deeplearning-ml-spec.png",
+    credentialUrl: "https://coursera.org/",
+  },
+  {
+    title: "Google Data Analytics Professional Certificate",
+    issuer: "Google / Coursera",
+    category: "Data Science",
+    year: "2026",
+    gradient: "from-indigo-500/40 to-blue-500/30",
+    image: "/certificates/google-data-analytics.png",
+    credentialUrl: "https://coursera.org/",
+  },
+  {
+    title: "Meta Backend Developer Professional Certificate",
+    issuer: "Meta / Coursera",
+    category: "Software Engineering",
+    year: "2026",
+    gradient: "from-violet-500/40 to-purple-500/30",
+    image: "/certificates/meta-backend.png",
+    credentialUrl: "https://coursera.org/",
+  },
 ];
 
+// ─────────────────────────────────────────────
+//  COURSES (learning history + in progress)
+// ─────────────────────────────────────────────
 export type Course = {
   title: string;
   provider: string;
-  category: "AI/ML" | "Data Science" | "Salesforce" | "Cloud Computing" | "Software Development"| "IoT"| "Cyber Security";
+  category:
+    | "AI/ML"
+    | "Data Science"
+    | "Software Engineering"
+    | "Salesforce"
+    | "Cloud"
+    | "NLP"
+    | "MLOps";
   icon: LucideIcon;
 };
 
 export const courses: Course[] = [
-  { title: "Generative AI Professional", provider: "Oracle", category: "AI/ML", icon: Brain },
-  { title: "AI Foundations Associate", provider: "Oracle", category: "AI/ML", icon: GraduationCap },
-  { title: "OCI Foundations Associate", provider: "Oracle", category: "Cloud Computing", icon: Cloud },
-
-  { title: "Agentblazer Champion (Developer)", provider: "Salesforce", category: "Salesforce", icon: Cloud },
-  { title: "Agentforce AI Foundations", provider: "Salesforce", category: "Salesforce", icon: Cloud },
-  { title: "Developer Catalyst V3.0", provider: "Salesforce", category: "Salesforce", icon: Code2 },
-  { title: "Cloud IoT", provider: "NPTEL (SWAYAM)", category: "IoT", icon: Cpu },
-  
-  { title: "Edge Machine Learning", provider: "NPTEL (SWAYAM)", category: "AI/ML", icon: Brain },
-  { title: "Large Applications Practicum", provider: "NPTEL (SWAYAM)", category: "Software Development", icon: Code2 },
-
-  { title: "Introduction to Cyber Security", provider: "Cisco Networking Academy", category: "Cyber Security", icon: Cloud },
-
-  { title: "Data Science 101", provider: "IBM Skills Network", category: "Data Science", icon: LineChart },
-
-  { title: "Deep Learning & Neural Networks", provider: "Self / Coursework", category: "AI/ML", icon: Cpu },
-  { title: "Data Analysis with Python", provider: "Self / Coursework", category: "Data Science", icon: LineChart },
-  { title: "Power BI for Analytics", provider: "Self", category: "Data Science", icon: Boxes },
-  { title: "Full-Stack Web Development", provider: "Self", category: "Software Development", icon: Code2 }
+  // Completed
+  { title: "Generative AI Professional",              provider: "Oracle (OCI)",          category: "AI/ML",               icon: Brain },
+  { title: "AI Foundations Associate",                provider: "Oracle (OCI)",          category: "AI/ML",               icon: GraduationCap },
+  { title: "Developer Catalyst V3.0",                 provider: "Salesforce",            category: "Salesforce",          icon: Cloud },
+  { title: "Data Science 101",                        provider: "IBM Skills Network",    category: "Data Science",        icon: LineChart },
+  { title: "Data Analysis with Python",               provider: "IBM Skills Network",    category: "Data Science",        icon: LineChart },
+  { title: "HuggingFace NLP Course",                  provider: "HuggingFace",           category: "NLP",                 icon: Brain },
+  // In progress / planned
+  { title: "Machine Learning Specialization",         provider: "DeepLearning.AI",       category: "AI/ML",               icon: Brain },
+  { title: "Building & Evaluating Advanced RAG",      provider: "DeepLearning.AI",       category: "AI/ML",               icon: Brain },
+  { title: "LLMOps",                                  provider: "DeepLearning.AI",       category: "MLOps",               icon: Server },
+  { title: "LangChain Academy — Intro to LangGraph",  provider: "LangChain",             category: "AI/ML",               icon: Brain },
+  { title: "Google Data Analytics Certificate",       provider: "Google / Coursera",     category: "Data Science",        icon: LineChart },
+  { title: "Statistics with Python Specialization",   provider: "U Michigan / Coursera", category: "Data Science",        icon: LineChart },
+  { title: "Meta Backend Developer Certificate",      provider: "Meta / Coursera",       category: "Software Engineering",icon: Code2 },
+  { title: "dbt Fundamentals",                        provider: "dbt Labs",              category: "Data Science",        icon: Database },
 ];
 
+// ─────────────────────────────────────────────
+//  AWARDS & LEADERSHIP
+// ─────────────────────────────────────────────
+export const awards = [
+  {
+    title: "NCC Naval Wing",
+    description: "Ex-Leading Cadet in NCC Naval Wing",
+    icon: Trophy,
+  },
+  {
+    title: "Team SAEINDIA",
+    description: "Member, SAEINDIA Student Collegiate Club",
+    icon: Trophy,
+  },
+  {
+    title: "Laxmi Mazumdar Award",
+    description: "Led BSG unit to 2nd Runner-Up for outstanding service and discipline",
+    icon: Award,
+  },
+  {
+    title: "Kittur Rani Chennamma Award",
+    description: "Awarded for excellence in social service and community contribution",
+    icon: Award,
+  },
+];
+
+// ─────────────────────────────────────────────
+//  STATS
+// ─────────────────────────────────────────────
 export type Stat = { label: string; value: number; suffix: string; icon: LucideIcon };
 
 export const stats: Stat[] = [
-  { label: "Projects Completed", value: 12, suffix: "+", icon: Boxes },
-  { label: "Certifications Earned", value: 3, suffix: "+", icon: Award },
-  { label: "Technologies Learned", value: 30, suffix: "+", icon: Cpu },
-  { label: "Competitions Participated", value: 8, suffix: "+", icon: Trophy },
+  { label: "CGPA",                    value: 9,  suffix: ".81", icon: GraduationCap },
+  { label: "Projects Built",          value: 6,  suffix: "+",   icon: Boxes },
+  { label: "Technologies",            value: 25, suffix: "+",   icon: Cpu },
+  { label: "Certifications",          value: 4,  suffix: "+",   icon: Award },
 ];
 
+// ─────────────────────────────────────────────
+//  NAV
+// ─────────────────────────────────────────────
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
+  { label: "Home",       href: "#home" },
+  { label: "About",      href: "#about" },
   { label: "Experience", href: "#experience" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Education", href: "#education" },
-  { label: "Certs", href: "#certifications" },
-  { label: "Contact", href: "#contact" },
+  { label: "Skills",     href: "#skills" },
+  { label: "Projects",   href: "#projects" },
+  { label: "Education",  href: "#education" },
+  { label: "Certs",      href: "#certifications" },
+  { label: "Contact",    href: "#contact" },
 ];
