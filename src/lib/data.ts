@@ -13,39 +13,39 @@ import {
   Trophy,
   Award,
   Server,
-  Heart,
 } from "lucide-react";
 
 // ─────────────────────────────────────────────
 //  PERSONAL
 // ─────────────────────────────────────────────
 export const personal = {
-  name: "Aanya Sharma",                   // ← add your full name
-  firstName: "Aanya",
+  name: "Tanvi Shetty",
+  firstName: "Tanvi",
   avatar: "https://avatar.iran.liara.run/public/girl",
-  title: "AI/ML Engineer & Tech Enthusiast | Building intelligent systems that matter",
+  title: "AI/ML Engineer & Data Scientist | Building intelligent systems with ML, GenAI & LLMs",
   roles: [
     "AI/ML Engineer",
     "Data Scientist",
-    "NLP Researcher",
-    "GenAI Builder",
-    "Women in Tech Advocate",
-    "Open-Source Contributor",
+    "NLP Engineer",
+    "GenAI & LLM Builder",
+    "Full Stack Developer",
+    "Problem Solver",
   ],
   intro:
-    "B.E. Computer Science & Data Science graduate from St. Joseph Engineering College, Mangaluru " +
-    "(CGPA 9.81). I'm a passionate AI/ML engineer who loves building production-ready intelligent " +
-    "systems — from multimodal document intelligence and medical imaging pipelines to LLM-powered " +
-    "RAG and GenAI applications. I contribute to open-source, build tools that matter, and care " +
-    "deeply about inspiring more women in tech.",
+    "Computer Science Engineer specializing in Data Science from St. Joseph Engineering College, " +
+    "Mangaluru (CGPA 9.79). I build intelligent software solutions using machine learning, " +
+    "artificial intelligence, and software engineering — from OCR-powered document intelligence to " +
+    "multilingual NLP systems. I'm actively expanding my expertise in Generative AI, large language " +
+    "models (LLMs), Retrieval-Augmented Generation (RAG), and AI agent frameworks.",
   location: "Udupi, Karnataka, India",
-  email: "",            // ← add your email
+  email: "shettytanvi19@gmail.com",
   phone: "",            // ← add your phone
+  website: "https://tanvi19.netlify.app",
   resumeUrl: "/resume.pdf",
   socials: {
-    github: "",         // ← add your GitHub URL
-    linkedin: "",       // ← add your LinkedIn URL
-    email: "",          // ← mailto:your@email.com
+    github: "https://github.com/TanviShetty19",
+    linkedin: "https://www.linkedin.com/in/tanvi-shetty19",
+    email: "mailto:shettytanvi19@gmail.com",
   },
 };
 
@@ -54,29 +54,26 @@ export const personal = {
 // ─────────────────────────────────────────────
 export const about = {
   summary:
-    "Results-driven Computer Science & Data Science graduate with a 9.81 CGPA and hands-on " +
-    "experience building AI-powered systems. She has developed production-grade OCR document " +
-    "intelligence pipelines, MRI-based Alzheimer's classification models, and Kannada NLP " +
-    "systems. She interned at Salesforce and Geojit Technologies Pvt. Ltd., gaining exposure to " +
-    "enterprise CRM automation and AI-driven document processing. Proficient in Python, " +
-    "FastAPI, TensorFlow, HuggingFace Transformers, LangChain, and Docker, she is currently " +
-    "building expertise in RAG pipelines, GenAI tooling, LLM fine-tuning, and MLOps — and loves " +
-    "contributing to open-source and mentoring women entering tech.",
+    "Computer Science Engineer specializing in Data Science with experience developing intelligent " +
+    "software solutions using machine learning, artificial intelligence, and software engineering " +
+    "principles. Strong foundation in problem solving, data analysis, automation, and application " +
+    "development, with the ability to translate data-driven insights into practical solutions. " +
+    "She has interned at Geojit Technologies and Salesforce (SkillWallet), gaining hands-on " +
+    "experience across the software development lifecycle, OCR/document AI, and CRM automation.",
   objective:
-    "AI/ML Engineer and Data Scientist with proven project depth in computer vision, NLP, and " +
-    "full-stack ML deployment. She is seeking a role to engineer scalable, production-ready AI " +
-    "solutions, build impactful GenAI tools, and grow into a senior ML engineering position while " +
-    "championing diversity in tech.",
+    "AI/ML Engineer and Data Scientist actively expanding expertise in Generative AI, large " +
+    "language models (LLMs), Retrieval-Augmented Generation (RAG), and AI agent frameworks. She is " +
+    "seeking a role to engineer scalable, production-ready AI solutions and grow into a senior " +
+    "ML engineering or data science position.",
   interests: [
-    "RAG Pipelines & LLM Engineering",
-    "Computer Vision & Medical Imaging",
-    "Kannada & Indic NLP",
-    "MLOps & Model Deployment",
+    "Generative AI, LLMs & RAG",
+    "AI Agent Frameworks",
     "Document Intelligence & OCR",
-    "Statistical Modelling & Causal Inference",
-    "Open-Source & GenAI Tooling",
-    "Women in Tech Advocacy",
-    "Data Engineering & Analytics",
+    "Kannada & Indic NLP",
+    "Computer Vision",
+    "Machine Learning & Deep Learning",
+    "Full-Stack & Backend Development",
+    "Data Analysis & Automation",
   ],
 };
 
@@ -183,17 +180,6 @@ export const skillCategories: SkillCategory[] = [
       { name: "MongoDB",       level: 48 }, // in progress
       { name: "ChromaDB / Vector DBs", level: 52 }, // building with RAG
       { name: "Redis",         level: 40 }, // rate limiter project
-    ],
-  },
-  {
-    category: "Community & Advocacy",
-    icon: Heart,
-    accent: "from-neon-pink to-neon-cyan",
-    skills: [
-      { name: "Women in Tech Advocate",     level: 90 },
-      { name: "Open-Source Contributions",  level: 72 },
-      { name: "Technical Writing & Blogging", level: 70 },
-      { name: "Mentorship & Community Building", level: 78 },
     ],
   },
 ];
@@ -453,7 +439,7 @@ export const education: EducationItem[] = [
     degree: "B.E. — Computer Science & Data Science",
     institution: "St. Joseph Engineering College, Mangaluru",
     duration: "2022 – Present",
-    score: "CGPA: 9.81",
+    score: "CGPA: 9.79",
     coursework: [
       "Machine Learning",
       "Deep Learning",
@@ -635,7 +621,7 @@ export const awards = [
 export type Stat = { label: string; value: number; suffix: string; icon: LucideIcon };
 
 export const stats: Stat[] = [
-  { label: "CGPA",                    value: 9,  suffix: ".81", icon: GraduationCap },
+  { label: "CGPA",                    value: 9,  suffix: ".79", icon: GraduationCap },
   { label: "Projects Built",          value: 6,  suffix: "+",   icon: Boxes },
   { label: "Technologies",            value: 25, suffix: "+",   icon: Cpu },
   { label: "Certifications",          value: 4,  suffix: "+",   icon: Award },

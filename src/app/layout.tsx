@@ -21,43 +21,44 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://aanya-sharma.github.io";
+const siteUrl = "https://tanvi19.netlify.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Aanya Sharma — AI/ML Engineer & Tech Enthusiast",
-    template: "%s | Aanya Sharma",
+    default: "Tanvi Shetty — AI/ML Engineer & Data Scientist",
+    template: "%s | Tanvi Shetty",
   },
   description:
-    "Portfolio of Aanya Sharma — AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools, and open-source projects, and advocating for women in tech. Explore projects, skills, and experience.",
+    "Portfolio of Tanvi Shetty — AI/ML Engineer & Data Scientist building intelligent software with machine learning, OCR/document AI, NLP, and GenAI/LLM/RAG. Explore projects, skills, and experience.",
   keywords: [
-    "Aanya Sharma",
+    "Tanvi Shetty",
     "AI/ML Engineer",
-    "Tech Enthusiast",
     "Data Scientist",
     "GenAI",
-    "Women in Tech",
+    "LLM",
+    "RAG",
+    "NLP",
     "Machine Learning",
     "Portfolio",
     "Mangaluru",
   ],
-  authors: [{ name: "Aanya Sharma" }],
-  creator: "Aanya Sharma",
+  authors: [{ name: "Tanvi Shetty" }],
+  creator: "Tanvi Shetty",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Aanya Sharma — AI/ML Engineer & Tech Enthusiast",
+    title: "Tanvi Shetty — AI/ML Engineer & Data Scientist",
     description:
-      "AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools, and open-source projects — passionate about women in tech.",
-    siteName: "Aanya Sharma Portfolio",
+      "AI/ML Engineer & Data Scientist building intelligent systems with ML, OCR/document AI, NLP, and GenAI/LLM/RAG.",
+    siteName: "Tanvi Shetty Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aanya Sharma — AI/ML Engineer & Tech Enthusiast",
+    title: "Tanvi Shetty — AI/ML Engineer & Data Scientist",
     description:
-      "AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools, and open-source projects — passionate about women in tech.",
+      "AI/ML Engineer & Data Scientist building intelligent systems with ML, OCR/document AI, NLP, and GenAI/LLM/RAG.",
   },
   robots: { index: true, follow: true },
 };

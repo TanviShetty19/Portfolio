@@ -11,7 +11,7 @@ export function Footer() {
           <div className="text-center md:text-left">
             <a href="#home" className="flex items-center justify-center gap-2 md:justify-start">
               <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-neon-blue to-neon-purple text-sm font-bold text-white">
-                AS
+                TS
               </span>
               <span className="text-lg font-semibold">
                 {personal.firstName}<span className="text-neon-cyan">.dev</span>

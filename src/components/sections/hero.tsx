@@ -48,9 +48,9 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mt-6 text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
           >
-            Hi, I&apos;m <span className="neon-text text-glow">Aanya</span>
+            Hi, I&apos;m <span className="neon-text text-glow">Tanvi</span>
             <br />
-            <span className="text-foreground">Sharma</span>
+            <span className="text-foreground">Shetty</span>
           </motion.h1>
 
           <motion.div
