@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://sohan-dsz.github.io/sitemap.xml",
+    sitemap: "https://aanya-sharma.github.io/sitemap.xml",
   };
 }

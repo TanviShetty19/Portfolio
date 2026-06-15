@@ -22,8 +22,8 @@ const details = [
   { icon: Mail, label: "Email", value: personal.email, href: personal.socials.email },
   { icon: Phone, label: "Phone", value: personal.phone, href: `tel:${personal.phone.replace(/\s/g, "")}` },
   { icon: MapPin, label: "Location", value: personal.location },
-  { icon: Linkedin, label: "LinkedIn", value: "in/sohan1919", href: personal.socials.linkedin },
-  { icon: Github, label: "GitHub", value: "Sohan-dsz", href: personal.socials.github },
+  { icon: Linkedin, label: "LinkedIn", value: "in/aanya-sharma", href: personal.socials.linkedin },
+  { icon: Github, label: "GitHub", value: "aanya-sharma", href: personal.socials.github },
 ];
 
 export function Contact() {

@@ -27,9 +27,10 @@ import { cn } from "@/lib/utils";
 const filters: ("All" | ProjectCategory)[] = [
   "All",
   "AI/ML",
+  "NLP",
+  "Computer Vision",
   "Data Science",
-  "Salesforce",
-  "Web Development",
+  "Software Engineering",
 ];
 
 function TiltCard({

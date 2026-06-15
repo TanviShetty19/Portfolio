@@ -35,7 +35,7 @@ export function LoadingScreen() {
               animate={{ rotate: -360 }}
               transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
             />
-            <span className="text-2xl font-bold neon-text">SD</span>
+            <span className="text-2xl font-bold neon-text">AS</span>
           </motion.div>
 
           <motion.p

@@ -54,7 +54,7 @@ export function Navbar() {
         >
           <a href="#home" className="flex items-center gap-2 pl-1 font-display">
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-neon-blue to-neon-purple text-sm font-bold text-white">
-              SD
+              AS
             </span>
             <span className="hidden text-sm font-semibold sm:block">
               {personal.firstName}

@@ -21,42 +21,43 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://sohan-dsz.github.io";
+const siteUrl = "https://aanya-sharma.github.io";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Sohan D Souza — AI/ML Engineer & Software Developer",
-    template: "%s | Sohan D Souza",
+    default: "Aanya Sharma — AI/ML Engineer & Tech Enthusiast",
+    template: "%s | Aanya Sharma",
   },
   description:
-    "Portfolio of Sohan D Souza — Software Engineer specializing in AI/ML, Data Science, Full-Stack Development, and Salesforce. Explore projects, skills, and experience.",
+    "Portfolio of Aanya Sharma — AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools, and open-source projects, and advocating for women in tech. Explore projects, skills, and experience.",
   keywords: [
-    "Sohan D Souza",
+    "Aanya Sharma",
     "AI/ML Engineer",
+    "Tech Enthusiast",
     "Data Scientist",
-    "Salesforce Developer",
-    "Full Stack Developer",
+    "GenAI",
+    "Women in Tech",
     "Machine Learning",
     "Portfolio",
     "Mangaluru",
   ],
-  authors: [{ name: "Sohan D Souza" }],
-  creator: "Sohan D Souza",
+  authors: [{ name: "Aanya Sharma" }],
+  creator: "Aanya Sharma",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Sohan D Souza — AI/ML Engineer & Software Developer",
+    title: "Aanya Sharma — AI/ML Engineer & Tech Enthusiast",
     description:
-      "Software Engineer specializing in AI/ML, Data Science, Full-Stack, and Salesforce.",
-    siteName: "Sohan D Souza Portfolio",
+      "AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools, and open-source projects — passionate about women in tech.",
+    siteName: "Aanya Sharma Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sohan D Souza — AI/ML Engineer & Software Developer",
+    title: "Aanya Sharma — AI/ML Engineer & Tech Enthusiast",
     description:
-      "Software Engineer specializing in AI/ML, Data Science, Full-Stack, and Salesforce.",
+      "AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools, and open-source projects — passionate about women in tech.",
   },
   robots: { index: true, follow: true },
 };
