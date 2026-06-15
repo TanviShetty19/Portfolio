@@ -212,162 +212,77 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  // ── EXISTING PROJECTS (upgraded with better descriptions) ──
-
   {
-    slug: "ocr-document-intelligence",
-    title: "Template-Based Intelligent Document Processing System",
+    slug: "document-intelligence-studio-v2",
+    title: "Document Intelligence Studio V2",
     category: "AI/ML",
     description:
-      "Production-grade document intelligence pipeline that extracts structured data from " +
-      "business forms using multi-model OCR ensemble with confidence-based validation and " +
-      "a scalable FastAPI backend.",
+      "Template-driven document intelligence platform that extracts and structures " +
+      "information from scanned forms and multi-page documents using OCR and computer " +
+      "vision. Supports image and PDF inputs, aligns filled documents to a stored " +
+      "template, performs field-specific OCR, validates values, and exports results as JSON.",
     achievements: [
-      "Ensemble of TrOCR + DocTR + EasyOCR with ORB feature matching and homography for document alignment",
-      "Confidence-based field validation — flagging low-confidence extractions for human review",
-      "FastAPI async backend with file upload, job queue, and structured JSON output",
-      "Achieved 91.3% field extraction accuracy vs 74% single-model baseline on 3,000 test forms",
-      "Tailwind CSS review UI for human-in-the-loop correction of low-confidence fields",
+      "Template-driven pipeline for extracting and structuring information from scanned forms and multi-page documents",
+      "Document alignment with field-specific OCR, including handwritten and multi-line content",
+      "Validation and batch-processing workflows to automate information extraction at scale",
+      "Image and PDF inputs with structured JSON export",
     ],
     tech: [
       "Python", "FastAPI", "OpenCV", "TrOCR", "DocTR", "EasyOCR",
-      "HuggingFace Transformers", "HTML", "Tailwind CSS", "JavaScript",
+      "Docker", "HuggingFace Transformers",
     ],
-    github: "",   // ← add GitHub link
-    demo: "",     // ← add live URL
+    github: "https://github.com/TanviShetty19/Document-Intelligence-Studio-V2",
+    demo: "",
     gradient: "from-amber-500/30 via-orange-500/20 to-yellow-500/30",
     emoji: "📄",
-    images: [],
+    images: ["/projects/form-extraction-1.png", "/projects/form-extraction-2.png"],
   },
   {
-    slug: "kannada-sarcasm-detection",
-    title: "Kannada Sarcasm Detection (EmoBhaava)",
-    category: "NLP",
+    slug: "cloud-based-naac-data-management",
+    title: "Cloud-Based NAAC Data Management System",
+    category: "Full-Stack",
     description:
-      "Deep learning framework for sarcasm and sentiment analysis in Kannada and " +
-      "code-mixed text, combining hybrid Transformer + rule-based architecture with a " +
-      "4,200-sample annotated dataset.",
+      "Centralized, cloud-ready platform that streamlines NAAC accreditation data " +
+      "management for higher-education institutions — with role-based access control, " +
+      "secure document storage, search, analytics dashboards, audit logging, and " +
+      "automated report generation.",
     achievements: [
-      "Curated 4,200-sample annotated Kannada sarcasm dataset — publicly available",
-      "Hybrid Transformer + rule-based system with contextual refinement for code-mixed text",
-      "Achieved 84.2% F1 vs 71.3% zero-shot BERT baseline",
-      "Flask web app for real-time sarcasm analysis of single comments and bulk datasets",
-      "Accepted March–September 2025",
+      "Centralized platform for accreditation documents, workflows, and institutional data with role-based access control and secure storage",
+      "Integrated search (MeiliSearch), authentication (Keycloak), and object storage (MinIO)",
+      "Containerized deployment for scalable, reproducible document management",
+      "Analytics dashboards, audit logging, and automated report generation",
     ],
     tech: [
-      "Python", "TensorFlow", "Transformers", "Flask", "Pandas", "NumPy",
+      "Django", "React", "PostgreSQL", "Docker", "Keycloak", "MinIO", "MeiliSearch",
     ],
-    github: "",   // ← add GitHub link
+    github: "https://github.com/TanviShetty19/Cloud-Based-Naac-Data-Management-System",
+    demo: "",
+    gradient: "from-indigo-500/30 via-blue-500/20 to-violet-500/30",
+    emoji: "🏛️",
+    images: ["/projects/naac-1.png", "/projects/naac-2.png", "/projects/naac-3.png"],
+  },
+  {
+    slug: "emobhaava-kannada-sarcasm",
+    title: "EmoBhaava — Kannada Sarcasm & Sentiment Analysis",
+    category: "NLP",
+    description:
+      "Multilingual NLP application for sarcasm and sentiment detection in Kannada, " +
+      "Romanized Kannada, and Kannada–English code-mixed text using XLM-RoBERTa and " +
+      "transformer-based models.",
+    achievements: [
+      "Context-aware sarcasm and sentiment classification across Kannada, Romanized Kannada, and code-mixed text",
+      "Fine-tuned XLM-RoBERTa with transformer-based linguistic feature modeling",
+      "REST APIs and batch-prediction workflows for scalable inference",
+      "Web interface and Dockerized deployment pipeline with automated testing",
+    ],
+    tech: [
+      "Python", "XLM-RoBERTa", "PyTorch", "HuggingFace Transformers", "Flask", "Docker", "NLP",
+    ],
+    github: "https://github.com/TanviShetty19/EmoBhaava---Kannada-Sarcasm-Detector",
     demo: "",
     gradient: "from-violet-500/30 via-purple-500/20 to-indigo-500/30",
     emoji: "🗣️",
-    images: [],
-  },
-  {
-    slug: "alzheimers-mri-classification",
-    title: "Alzheimer's Disease Prediction using MRI & Clinical Data",
-    category: "Computer Vision",
-    description:
-      "End-to-end ML/DL pipeline predicting Alzheimer's stages from MRI scans and " +
-      "clinical data using MobileNetV2 transfer learning, deployed as an interactive " +
-      "Streamlit web application.",
-    achievements: [
-      "MobileNetV2 transfer learning on OASIS-3 dataset — 78.9% accuracy, F1=0.81, ROC-AUC=0.91",
-      "Multi-modal fusion: MRI image features + structured clinical data",
-      "Streamlit app with MRI upload, stage prediction, and real-time visualisation",
-      "Integrated result logging and GitHub version control",
-      "Grad-CAM visualisation showing which brain regions influence prediction",
-    ],
-    tech: [
-      "Python", "TensorFlow", "Streamlit", "OpenCV", "Scikit-learn", "Pandas",
-    ],
-    github: "",   // ← add GitHub link
-    demo: "",     // ← add HuggingFace Spaces or Render URL
-    gradient: "from-cyan-500/30 via-sky-500/20 to-emerald-500/30",
-    emoji: "🧠",
-    images: [],
-  },
-
-  // ── PROJECTS TO BUILD (add as you complete them) ──
-
-  {
-    slug: "kannada-legal-rag",
-    title: "Kannada Legal Document Q&A (RAG System)",
-    category: "AI/ML",
-    description:
-      "Retrieval-Augmented Generation system over Karnataka High Court judgements " +
-      "using multilingual embeddings (BAAI/bge-m3) that supports queries in both " +
-      "Kannada and English with cited answers.",
-    achievements: [
-      "Ingestion pipeline over 20+ Karnataka HC judgements using PyPDF + LangChain",
-      "BAAI/bge-m3 multilingual embeddings — supports Kannada and English queries natively",
-      "Hybrid retrieval: semantic search (ChromaDB) + BM25 keyword search via EnsembleRetriever",
-      "RAGAS evaluation: Faithfulness=0.87, Context Precision=0.79, Context Recall=0.83",
-      "Deployed on HuggingFace Spaces with Gradio UI showing cited source chunks",
-    ],
-    tech: [
-      "Python", "LangChain", "ChromaDB", "BAAI/bge-m3", "Groq API",
-      "RAGAS", "Gradio", "FastAPI", "HuggingFace Spaces",
-    ],
-    github: "",   // ← fill after building
-    demo: "",
-    gradient: "from-rose-500/30 via-pink-500/20 to-red-500/30",
-    emoji: "⚖️",
-    images: [],
-  },
-  {
-    slug: "distributed-rate-limiter",
-    title: "Distributed Rate Limiter Library",
-    category: "Software Engineering",
-    description:
-      "Production-grade Python library implementing four rate limiting algorithms " +
-      "(token bucket, leaky bucket, fixed window, sliding window log) with atomic " +
-      "Redis Lua scripts for distributed correctness. Published to PyPI.",
-    achievements: [
-      "Four algorithms: token bucket, leaky bucket, fixed window counter, sliding window log",
-      "Redis Lua scripts for atomic check-and-increment — race-condition-proof under concurrent load",
-      "FastAPI middleware: one-line integration via @limiter.limit('10/minute') decorator",
-      "RFC 6585 compliant 429 responses with X-RateLimit-* and Retry-After headers",
-      "Concurrency test: 50 simultaneous requests against limit=10 — exactly 10 allowed, 100% of runs",
-      "Locust benchmark: 50,000 rate-limited requests/sec, P99 latency < 2ms",
-      "Published to PyPI with GitHub Actions CI, 95%+ test coverage, ReadTheDocs documentation",
-    ],
-    tech: [
-      "Python", "Redis", "Lua", "FastAPI", "Docker", "pytest",
-      "testcontainers", "GitHub Actions", "PyPI", "Locust",
-    ],
-    github: "",   // ← fill after building
-    demo: "",
-    gradient: "from-emerald-500/30 via-green-500/20 to-teal-500/30",
-    emoji: "🚦",
-    images: [],
-  },
-  {
-    slug: "price-elasticity-engine",
-    title: "Price Elasticity Engine with Causal Inference",
-    category: "Data Science",
-    description:
-      "Statistical engine estimating causal demand elasticity per product category " +
-      "using instrumental variables (IV2SLS) on 100K+ e-commerce orders — with an " +
-      "interactive Plotly Dash revenue simulation dashboard.",
-    achievements: [
-      "Instrumental variables (IV2SLS via linearmodels) to eliminate endogeneity bias in price-demand estimation",
-      "EconML CausalForest for heterogeneous per-SKU elasticity — not a single average",
-      "Bootstrap confidence intervals: elasticity reported as −1.4 (95% CI: −1.8 to −1.1)",
-      "dbt transformation layer over Olist 100K+ e-commerce orders in PostgreSQL",
-      "Revenue simulation dashboard (Plotly Dash): drag price slider → see ₹ impact with CI",
-      "OLS vs IV side-by-side comparison proving naive regression is biased",
-      "3-page stakeholder report with pricing recommendations and expected revenue impact",
-    ],
-    tech: [
-      "Python", "DoWhy", "EconML", "linearmodels", "dbt",
-      "PostgreSQL", "Plotly Dash", "Pandas", "Scikit-learn",
-    ],
-    github: "",
-    demo: "",
-    gradient: "from-indigo-500/30 via-blue-500/20 to-violet-500/30",
-    emoji: "📈",
-    images: [],
+    images: ["/projects/bot-1.png", "/projects/bot-2.png", "/projects/bot-3.png"],
   },
 ];
 
@@ -386,39 +301,38 @@ export type TimelineItem = {
 
 export const experience: TimelineItem[] = [
   {
-    title: "AIML Full Stack Intern",
+    title: "AIML — Full Stack Intern",
     org: "Geojit Technologies Pvt. Ltd.",
     period: "Jan 2026 – Apr 2026",
-    location: "Offline",
     tag: "Internship",
     icon: Briefcase,
     points: [
-      "Engineered AI-driven document automation solutions for financial workflows, improving efficiency and reducing manual processing effort by 60%.",
-      "Developed scalable FastAPI backend services and integrated OCR pipelines using OpenCV and transformer models (TrOCR, DocTR).",
-      "Improved extraction accuracy and reliability through validation frameworks, model optimisation, and systematic workflow improvements.",
+      "Contributed to the development of AI-driven software solutions by applying machine learning, OCR, and backend development concepts in an enterprise environment.",
+      "Worked across the software development lifecycle — requirement analysis, implementation, testing, and deployment — collaborating within cross-functional teams.",
     ],
   },
   {
-    title: "Salesforce Virtual Internship",
-    org: "SkillWallet / Salesforce",
+    title: "Salesforce Virtual Intern",
+    org: "SkillWallet (Salesforce)",
     period: "May 2025 – Jul 2025",
     location: "Remote",
     tag: "Internship",
     icon: Cloud,
     points: [
-      "Completed structured internship in Salesforce CRM, Lightning App Builder, and Process Automation using Flows and Report generation.",
-      "Gained hands-on experience via Trailhead projects — earned multiple badges and certifications on the Salesforce learning platform.",
+      "Developed and configured CRM solutions using Salesforce Flow, Lightning App Builder, Reports, and Dashboards.",
+      "Implemented workflow automation and data management for lead tracking, inventory management, and approval processes.",
     ],
   },
   {
-    title: "Student Member — SAEINDIA",
-    org: "SAEINDIA Student Collegiate Club",
-    period: "2023 – Present",
+    title: "Manager — Team SJEC Racing",
+    org: "BAJA SAEINDIA",
+    period: "2025 – 2026",
     location: "St. Joseph Engineering College, Mangaluru",
     tag: "Leadership",
     icon: Trophy,
     points: [
-      "Active member of the SAEINDIA Collegiate Club contributing to automotive engineering initiatives.",
+      "Managed Team SJEC Racing, contributing to the team's achievement of AIR 3 in ATVC and AIR 8 Overall at BAJA SAEINDIA 2026.",
+      "Led planning, coordination, and cross-functional teamwork across the competition lifecycle.",
     ],
   },
 ];
@@ -489,67 +403,36 @@ export type Certification = {
 };
 
 export const certifications: Certification[] = [
-  // ── EXISTING ──
   {
-    title: "Generative AI Professional — AI Foundations Associate",
+    title: "Generative AI Professional",
     issuer: "Oracle Cloud Infrastructure (OCI)",
     category: "AI/ML",
     year: "2025",
     gradient: "from-purple-500/40 to-fuchsia-500/30",
-    image: "/certificates/oracle-genai-professional.png",
+    image: "/certificates/oci-generative-ai-professional.png",
   },
   {
-    title: "Developer Catalyst V3.0 — Administrator Explorer",
+    title: "AI Foundations Associate",
+    issuer: "Oracle Cloud Infrastructure (OCI)",
+    category: "AI/ML",
+    year: "2025",
+    gradient: "from-cyan-500/40 to-sky-500/30",
+    image: "/certificates/oci-ai-foundations-associate.png",
+  },
+  {
+    title: "Foundations Associate",
+    issuer: "Oracle Cloud Infrastructure (OCI)",
+    category: "Cloud",
+    year: "2025",
+    gradient: "from-rose-500/40 to-orange-500/30",
+    image: "/certificates/oci-foundations-associate.png",
+  },
+  {
+    title: "Developer Catalyst (Virtual Internship) & Administrator Explorer",
     issuer: "Salesforce",
     category: "Salesforce",
     year: "2025",
     gradient: "from-blue-500/40 to-cyan-500/30",
-    image: "/certificates/salesforce-developer-catalyst.png",
-  },
-  {
-    title: "Data Science 101 — Data Analysis with Python",
-    issuer: "IBM Developer Skills Network",
-    category: "Data Science",
-    year: "2024",
-    gradient: "from-rose-500/40 to-orange-500/30",
-    image: "/certificates/ibm-data-science.png",
-  },
-  {
-    title: "Participated in mBAIA (Jan 2024 & 2025)",
-    issuer: "SAEINDIA",
-    category: "Other",
-    year: "2024–2025",
-    gradient: "from-emerald-500/40 to-teal-500/30",
-    image: "/certificates/saeindia-mbaia.png",
-  },
-
-  // ── TO COMPLETE (add images when earned) ──
-  {
-    title: "Machine Learning Specialization",
-    issuer: "DeepLearning.AI / Coursera",
-    category: "AI/ML",
-    year: "2026",          // ← update when earned
-    gradient: "from-cyan-500/40 to-sky-500/30",
-    image: "/certificates/deeplearning-ml-spec.png",
-    credentialUrl: "https://coursera.org/",
-  },
-  {
-    title: "Google Data Analytics Professional Certificate",
-    issuer: "Google / Coursera",
-    category: "Data Science",
-    year: "2026",
-    gradient: "from-indigo-500/40 to-blue-500/30",
-    image: "/certificates/google-data-analytics.png",
-    credentialUrl: "https://coursera.org/",
-  },
-  {
-    title: "Meta Backend Developer Professional Certificate",
-    issuer: "Meta / Coursera",
-    category: "Software Engineering",
-    year: "2026",
-    gradient: "from-violet-500/40 to-purple-500/30",
-    image: "/certificates/meta-backend.png",
-    credentialUrl: "https://coursera.org/",
   },
 ];
 
@@ -594,23 +477,23 @@ export const courses: Course[] = [
 // ─────────────────────────────────────────────
 export const awards = [
   {
+    title: "BAJA SAEINDIA 2026 — Team SJEC Racing",
+    description: "Served as Manager; team achieved AIR 3 in ATVC and AIR 8 Overall.",
+    icon: Trophy,
+  },
+  {
     title: "NCC Naval Wing",
-    description: "Ex-Leading Cadet in NCC Naval Wing",
+    description: "Leading Cadet — demonstrated leadership, discipline, and teamwork.",
     icon: Trophy,
-  },
-  {
-    title: "Team SAEINDIA",
-    description: "Member, SAEINDIA Student Collegiate Club",
-    icon: Trophy,
-  },
-  {
-    title: "Laxmi Mazumdar Award",
-    description: "Led BSG unit to 2nd Runner-Up for outstanding service and discipline",
-    icon: Award,
   },
   {
     title: "Kittur Rani Chennamma Award",
-    description: "Awarded for excellence in social service and community contribution",
+    description: "Recognized for leadership, social service, and community engagement.",
+    icon: Award,
+  },
+  {
+    title: "Laxmi Mazumdar Award",
+    description: "Contributed to the award-winning Bharat Scouts and Guides unit.",
     icon: Award,
   },
 ];
@@ -622,7 +505,7 @@ export type Stat = { label: string; value: number; suffix: string; icon: LucideI
 
 export const stats: Stat[] = [
   { label: "CGPA",                    value: 9,  suffix: ".79", icon: GraduationCap },
-  { label: "Projects Built",          value: 6,  suffix: "+",   icon: Boxes },
+  { label: "Projects Built",          value: 3,  suffix: "+",   icon: Boxes },
   { label: "Technologies",            value: 25, suffix: "+",   icon: Cpu },
   { label: "Certifications",          value: 4,  suffix: "+",   icon: Award },
 ];

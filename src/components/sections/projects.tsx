@@ -28,9 +28,7 @@ const filters: ("All" | ProjectCategory)[] = [
   "All",
   "AI/ML",
   "NLP",
-  "Computer Vision",
-  "Data Science",
-  "Software Engineering",
+  "Full-Stack",
 ];
 
 function TiltCard({
