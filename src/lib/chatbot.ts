@@ -14,7 +14,7 @@ const rules: Rule[] = [
   {
     keywords: ["hello", "hi", "hey", "greetings"],
     answer: () =>
-      `Hey! I'm Sohan's portfolio assistant. Ask me about his skills, projects, experience, education, or how to get in touch.`,
+      `Hey! I'm Aanya's portfolio assistant. Ask me about her skills, projects, experience, education, or how to get in touch.`,
   },
   {
     keywords: ["who", "about", "yourself", "summary", "intro"],
@@ -27,7 +27,7 @@ const rules: Rule[] = [
   {
     keywords: ["skill", "tech", "stack", "language", "tool", "framework"],
     answer: () =>
-      `Sohan works across:\n${skillCategories
+      `Aanya works across:\n${skillCategories
         .map((c) => `• ${c.category}: ${c.skills.map((s) => s.name).join(", ")}`)
         .join("\n")}`,
   },
@@ -41,12 +41,12 @@ const rules: Rule[] = [
   {
     keywords: ["ai", "ml", "machine learning", "deep learning", "nlp", "vision"],
     answer: () =>
-      `On the AI/ML side, Sohan has built EmoBhaava (Kannada sentiment & sarcasm detection), HealthMate (multimodal health assistant with Whisper + LLMs), and an Alzheimer's MRI classification study. Tools: TensorFlow, PyTorch, Scikit-Learn, NLP, Computer Vision.`,
+      `On the AI/ML side, Aanya has built EmoBhaava (Kannada sentiment & sarcasm detection), HealthMate (multimodal health assistant with Whisper + LLMs), and an Alzheimer's MRI classification study. Tools: TensorFlow, PyTorch, Scikit-Learn, NLP, Computer Vision.`,
   },
   {
     keywords: ["salesforce", "apex", "lwc", "crm", "flow"],
     answer: () =>
-      `Sohan interned at Salesforce building CRM automation with Flow, Lightning App Builder UIs, and analytics dashboards. He also built a CRM solution for WhatNext Vision Motors using Apex, LWC, Flow Builder, and SOQL.`,
+      `Aanya interned at Salesforce building CRM automation with Flow, Lightning App Builder UIs, and analytics dashboards. She also built a CRM solution for WhatNext Vision Motors using Apex, LWC, Flow Builder, and SOQL.`,
   },
   {
     keywords: ["experience", "intern", "internship", "job", "geojit"],
@@ -72,20 +72,20 @@ const rules: Rule[] = [
   {
     keywords: ["contact", "email", "reach", "hire", "phone", "linkedin", "github"],
     answer: () =>
-      `You can reach Sohan at ${personal.email} or ${personal.phone}.\nLinkedIn: ${personal.socials.linkedin}\nGitHub: ${personal.socials.github}`,
+      `You can reach Aanya at ${personal.email} or ${personal.phone}.\nLinkedIn: ${personal.socials.linkedin}\nGitHub: ${personal.socials.github}`,
   },
   {
     keywords: ["resume", "cv", "download"],
     answer: () =>
-      `You can download Sohan's resume using the "Download Resume" button in the hero section at the top of the page.`,
+      `You can download Aanya's resume using the "Download Resume" button in the hero section at the top of the page.`,
   },
   {
     keywords: ["location", "where", "based", "city"],
-    answer: () => `Sohan is based in ${personal.location}.`,
+    answer: () => `Aanya is based in ${personal.location}.`,
   },
 ];
 
-const fallback = `I can tell you about Sohan's skills, projects, experience, education, certifications, or contact details. Try asking "What projects has he built?" or "What are his AI/ML skills?"`;
+const fallback = `I can tell you about Aanya's skills, projects, experience, education, certifications, or contact details. Try asking "What projects has she built?" or "What are her AI/ML skills?"`;
 
 export function getBotReply(input: string): string {
   const q = input.toLowerCase();
@@ -101,8 +101,8 @@ export function getBotReply(input: string): string {
 }
 
 export const suggestedQuestions = [
-  "What are his top skills?",
-  "Tell me about his projects",
-  "What's his experience?",
-  "How can I contact him?",
+  "What are her top skills?",
+  "Tell me about her projects",
+  "What's her experience?",
+  "How can I contact her?",
 ];

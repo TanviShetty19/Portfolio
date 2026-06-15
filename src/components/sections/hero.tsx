@@ -48,9 +48,9 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mt-6 text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
           >
-            Hi, I&apos;m <span className="neon-text text-glow">Sohan</span>
+            Hi, I&apos;m <span className="neon-text text-glow">Aanya</span>
             <br />
-            <span className="text-foreground">D Souza</span>
+            <span className="text-foreground">Sharma</span>
           </motion.h1>
 
           <motion.div
@@ -60,7 +60,7 @@ export function Hero() {
             className="mt-5 flex h-9 items-center justify-center text-xl font-medium text-muted-foreground lg:justify-start"
           >
             <span className="mr-2 text-foreground">I&apos;m a</span>
-            <span className="font-mono text-neon-cyan text-glow">Software Engineer</span>
+            <span className="font-mono text-neon-cyan text-glow">AI/ML Engineer</span>
           </motion.div>
 
           <motion.p
@@ -131,7 +131,7 @@ export function Hero() {
             </div>
             <div className="absolute inset-[10px] overflow-hidden rounded-full border border-white/10">
               <Image
-                src="/profile.png"
+                src={personal.avatar}
                 alt={personal.name}
                 fill
                 priority

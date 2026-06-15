@@ -13,7 +13,7 @@ export function Chatbot() {
   const [messages, setMessages] = useState<Msg[]>([
     {
       role: "bot",
-      text: "Hi! I'm Sohan's AI assistant 🤖 Ask me anything about his work, skills, or experience.",
+      text: "Hi! I'm Aanya's AI assistant 🤖 Ask me anything about her work, skills, or experience.",
     },
   ]);
   const [typing, setTyping] = useState(false);
@@ -125,7 +125,7 @@ export function Chatbot() {
               <input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask about Sohan…"
+                placeholder="Ask about Aanya…"
                 className="h-10 w-full rounded-full border border-white/10 bg-white/5 px-4 text-sm outline-none placeholder:text-muted-foreground focus:border-neon-cyan/50"
               />
               <button

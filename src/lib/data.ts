@@ -13,27 +13,31 @@ import {
   Trophy,
   Award,
   Server,
+  Heart,
 } from "lucide-react";
 
 // ─────────────────────────────────────────────
 //  PERSONAL
 // ─────────────────────────────────────────────
 export const personal = {
-  name: "Tanvi",                          // ← add your full name
-  firstName: "Tanvi",
-  title: "AI/ML Engineer | Data Scientist | Software Engineer",
+  name: "Aanya Sharma",                   // ← add your full name
+  firstName: "Aanya",
+  avatar: "https://avatar.iran.liara.run/public/girl",
+  title: "AI/ML Engineer & Tech Enthusiast | Building intelligent systems that matter",
   roles: [
     "AI/ML Engineer",
     "Data Scientist",
     "NLP Researcher",
-    "Full Stack Developer",
-    "Problem Solver",
+    "GenAI Builder",
+    "Women in Tech Advocate",
+    "Open-Source Contributor",
   ],
   intro:
     "B.E. Computer Science & Data Science graduate from St. Joseph Engineering College, Mangaluru " +
-    "(CGPA 9.81). I build production-ready AI systems — from multimodal document intelligence and " +
-    "medical imaging pipelines to LLM-powered RAG applications — and I am actively seeking " +
-    "entry-level roles in AI/ML Engineering, Data Science, and Software Engineering.",
+    "(CGPA 9.81). I'm a passionate AI/ML engineer who loves building production-ready intelligent " +
+    "systems — from multimodal document intelligence and medical imaging pipelines to LLM-powered " +
+    "RAG and GenAI applications. I contribute to open-source, build tools that matter, and care " +
+    "deeply about inspiring more women in tech.",
   location: "Udupi, Karnataka, India",
   email: "",            // ← add your email
   phone: "",            // ← add your phone
@@ -51,16 +55,18 @@ export const personal = {
 export const about = {
   summary:
     "Results-driven Computer Science & Data Science graduate with a 9.81 CGPA and hands-on " +
-    "experience building AI-powered systems. Developed production-grade OCR document " +
+    "experience building AI-powered systems. She has developed production-grade OCR document " +
     "intelligence pipelines, MRI-based Alzheimer's classification models, and Kannada NLP " +
-    "systems. Interned at Salesforce and Geojit Technologies Pvt. Ltd., gaining exposure to " +
+    "systems. She interned at Salesforce and Geojit Technologies Pvt. Ltd., gaining exposure to " +
     "enterprise CRM automation and AI-driven document processing. Proficient in Python, " +
-    "FastAPI, TensorFlow, HuggingFace Transformers, LangChain, and Docker. Currently " +
-    "building expertise in RAG pipelines, LLM fine-tuning, MLOps, and distributed systems.",
+    "FastAPI, TensorFlow, HuggingFace Transformers, LangChain, and Docker, she is currently " +
+    "building expertise in RAG pipelines, GenAI tooling, LLM fine-tuning, and MLOps — and loves " +
+    "contributing to open-source and mentoring women entering tech.",
   objective:
-    "Fresher AI/ML Engineer and Data Scientist with proven project depth in computer vision, " +
-    "NLP, and full-stack ML deployment. Seeking a role to engineer scalable, production-ready " +
-    "AI solutions and grow into a senior ML engineering or data science position.",
+    "AI/ML Engineer and Data Scientist with proven project depth in computer vision, NLP, and " +
+    "full-stack ML deployment. She is seeking a role to engineer scalable, production-ready AI " +
+    "solutions, build impactful GenAI tools, and grow into a senior ML engineering position while " +
+    "championing diversity in tech.",
   interests: [
     "RAG Pipelines & LLM Engineering",
     "Computer Vision & Medical Imaging",
@@ -68,7 +74,8 @@ export const about = {
     "MLOps & Model Deployment",
     "Document Intelligence & OCR",
     "Statistical Modelling & Causal Inference",
-    "Distributed Systems",
+    "Open-Source & GenAI Tooling",
+    "Women in Tech Advocacy",
     "Data Engineering & Analytics",
   ],
 };
@@ -176,6 +183,17 @@ export const skillCategories: SkillCategory[] = [
       { name: "MongoDB",       level: 48 }, // in progress
       { name: "ChromaDB / Vector DBs", level: 52 }, // building with RAG
       { name: "Redis",         level: 40 }, // rate limiter project
+    ],
+  },
+  {
+    category: "Community & Advocacy",
+    icon: Heart,
+    accent: "from-neon-pink to-neon-cyan",
+    skills: [
+      { name: "Women in Tech Advocate",     level: 90 },
+      { name: "Open-Source Contributions",  level: 72 },
+      { name: "Technical Writing & Blogging", level: 70 },
+      { name: "Mentorship & Community Building", level: 78 },
     ],
   },
 ];
