@@ -30,14 +30,13 @@ export const metadata: Metadata = {
     template: "%s | Tanvi Shetty",
   },
   description:
-    "Portfolio of Tanvi Shetty — AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools, and open-source projects, and advocating for women in tech. Explore projects, skills, and experience.",
+    "Portfolio of Tanvi Shetty — AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools.",
   keywords: [
     "Tanvi Shetty",
     "AI/ML Engineer",
     "Tech Enthusiast",
     "Data Scientist",
     "GenAI",
-    "Women in Tech",
     "Machine Learning",
     "Portfolio",
     "Mangaluru",
@@ -50,14 +49,14 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: "Tanvi Shetty — AI/ML Engineer & Tech Enthusiast",
     description:
-      "AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools, and open-source projects — passionate about women in tech.",
+      "AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools.",
     siteName: "Tanvi Shetty Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Tanvi Shetty — AI/ML Engineer & Tech Enthusiast",
     description:
-      "AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools, and open-source projects — passionate about women in tech.",
+      "AI/ML Engineer & Tech Enthusiast building intelligent systems, GenAI tools.",
   },
   robots: { index: true, follow: true },
 };
