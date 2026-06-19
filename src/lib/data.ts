@@ -21,7 +21,7 @@ import {
 export const personal = {
   name: "Tanvi Shetty",                          // ← add your full name
   firstName: "Tanvi",
-  title: "AI/ML Engineer | Data Scientist | Software Engineer",
+  title: "Computer Science Engineer | Data Science | AI & ML",
   roles: [
     "AI/ML Engineer",
     "Data Scientist",
@@ -35,9 +35,9 @@ export const personal = {
     "medical imaging pipelines to LLM-powered RAG applications — and I am actively seeking " +
     "entry-level roles in AI/ML Engineering, Data Science, and Software Engineering.",
   location: "Udupi, Karnataka, India",
-  email: "shettytanvi19@gmail.com",            // ← add your email
-  phone: "+91 8050054065",            // ← add your phone
+  email: "shettytanvi19@gmail.com",            // ← add your email            // ← add your phone
   resumeUrl: "/resume.pdf",
+  phone: "",
   socials: {
     github: "https://github.com/TanviShetty19",         // ← add your GitHub URL
     linkedin: "https://www.linkedin.com/in/tanvi-shetty19",       // ← add your LinkedIn URL
@@ -50,29 +50,25 @@ export const personal = {
 // ─────────────────────────────────────────────
 export const about = {
   summary:
-    "Results-driven Computer Science & Data Science graduate with a 9.81 CGPA and hands-on " +
-    "experience building AI-powered systems. Developed production-grade OCR document " +
-    "intelligence pipelines, MRI-based Alzheimer's classification models, and Kannada NLP " +
-    "systems. Interned at Salesforce and Geojit Technologies Pvt. Ltd., gaining exposure to " +
-    "enterprise CRM automation and AI-driven document processing. Proficient in Python, " +
-    "FastAPI, TensorFlow, HuggingFace Transformers, LangChain, and Docker. Currently " +
-    "building expertise in RAG pipelines, LLM fine-tuning, MLOps, and distributed systems.",
+    "Computer Science & Data Science student with hands-on experience developing AI-powered applications, enterprise software solutions, and intelligent automation systems. My work spans document intelligence, OCR, computer vision, natural language processing, Salesforce CRM automation, and full-stack application development. Through academic, internship, and personal projects, I have built solutions that combine machine learning, software engineering, and data-driven problem solving to address real-world challenges. Currently exploring Generative AI, Retrieval-Augmented Generation (RAG), LangChain, LLM fine-tuning, MLOps, and distributed systems through hands-on projects, coursework, and continuous learning.",
+
   objective:
-    "Fresher AI/ML Engineer and Data Scientist with proven project depth in computer vision, " +
-    "NLP, and full-stack ML deployment. Seeking a role to engineer scalable, production-ready " +
-    "AI solutions and grow into a senior ML engineering or data science position.",
+    "Aspiring AI/ML Engineer and Software Engineer passionate about building intelligent, scalable, and user-focused applications. Seeking opportunities to apply skills in artificial intelligence, machine learning, software development, and data science while continuously learning, innovating, and contributing to impactful technology solutions.",
+
   interests: [
-    "RAG Pipelines & LLM Engineering",
-    "Computer Vision & Medical Imaging",
-    "Kannada & Indic NLP",
-    "MLOps & Model Deployment",
+    "Generative AI & Large Language Models",
+    "RAG & LangChain Applications",
     "Document Intelligence & OCR",
-    "Statistical Modelling & Causal Inference",
+    "Computer Vision",
+    "Natural Language Processing",
+    "Full Stack Development",
+    "Enterprise Software & CRM Automation",
+    "MLOps & AI Deployment",
+    "Cloud Technologies",
     "Distributed Systems",
-    "Data Engineering & Analytics",
+    "Data Science & Analytics",
   ],
 };
-
 // ─────────────────────────────────────────────
 //  SKILLS
 // ─────────────────────────────────────────────
@@ -99,98 +95,113 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     category: "AI / ML Engineering",
-    icon: Brain,
-    accent: "from-neon-purple to-neon-pink",
-    skills: [
-      { name: "TensorFlow / Keras",          level: 82 },
-      { name: "Scikit-learn",                level: 84 },
-      { name: "PyTorch",                     level: 70 }, // upskilling
-      { name: "HuggingFace Transformers",    level: 78 },
-      { name: "LangChain & RAG",             level: 55 }, // actively building
-      { name: "LLM Fine-tuning (LoRA/PEFT)", level: 45 }, // in progress
-      { name: "OpenCV",                      level: 80 },
-      { name: "XGBoost / Ensemble Methods",  level: 76 },
-    ],
-  },
-  {
-    category: "NLP & Computer Vision",
-    icon: Cpu,
-    accent: "from-neon-purple to-neon-blue",
-    skills: [
-      { name: "Transformers (BERT / DistilBERT)", level: 78 },
-      { name: "OCR (DocTR / TrOCR / EasyOCR)",    level: 86 },
-      { name: "Document Layout Analysis",          level: 80 },
-      { name: "Kannada / Indic NLP",               level: 76 },
-      { name: "Sentiment & Sarcasm Detection",     level: 78 },
-      { name: "MRI / Medical Image Analysis",      level: 74 },
-    ],
-  },
-  {
-    category: "Data Science & Analytics",
-    icon: LineChart,
-    accent: "from-neon-cyan to-neon-blue",
-    skills: [
-      { name: "Pandas & NumPy",        level: 88 },
-      { name: "Matplotlib / Seaborn",  level: 84 },
-      { name: "Plotly",                level: 78 },
-      { name: "Streamlit",             level: 80 },
-      { name: "EDA & Feature Eng.",    level: 82 },
-      { name: "Tableau / Power BI",    level: 45 }, // upskilling
-      { name: "Statistics & A/B Tests",level: 48 }, // upskilling
-    ],
-  },
-  {
-    category: "MLOps & Deployment",
-    icon: Server,
-    accent: "from-neon-cyan to-neon-purple",
-    skills: [
-      { name: "FastAPI",                  level: 82 },
-      { name: "Docker",                   level: 62 }, // upskilling
-      { name: "MLflow / W&B",             level: 40 }, // upskilling
-      { name: "Git & GitHub",             level: 85 },
-      { name: "CI/CD (GitHub Actions)",   level: 42 }, // upskilling
-      { name: "HuggingFace Spaces",       level: 60 },
-      { name: "Streamlit Cloud / Render", level: 58 },
-    ],
-  },
-  {
-    category: "Development & Tools",
-    icon: Globe,
-    accent: "from-neon-blue to-neon-violet",
-    skills: [
-      { name: "Tailwind CSS",         level: 70 },
-      { name: "Google Colab",         level: 90 },
-      { name: "VS Code",              level: 88 },
-      { name: "Postman",              level: 75 },
-      { name: "Microsoft Excel",      level: 80 },
-      { name: "Salesforce CRM",       level: 65 },
-    ],
-  },
-  {
-    category: "Databases",
-    icon: Database,
-    accent: "from-neon-pink to-neon-purple",
-    skills: [
-      { name: "PostgreSQL",    level: 62 }, // upskilling
-      { name: "MySQL",         level: 65 },
-      { name: "MongoDB",       level: 48 }, // in progress
-      { name: "ChromaDB / Vector DBs", level: 52 }, // building with RAG
-      { name: "Redis",         level: 40 }, // rate limiter project
-    ],
-  },
+icon: Brain,
+accent: "from-neon-purple to-neon-pink",
+skills: [
+{ name: "TensorFlow / Keras", level: 82 },
+{ name: "Scikit-learn", level: 84 },
+{ name: "PyTorch", level: 70 },
+{ name: "HuggingFace Transformers", level: 78 },
+{ name: "OpenCV", level: 80 },
+{ name: "XGBoost / Ensemble Methods", level: 76 },
+{ name: "Generative AI", level: 72 },
+{ name: "LangChain & RAG", level: 55 },
+{ name: "Prompt Engineering", level: 75 },
+{ name: "LLM Fine-tuning (LoRA / PEFT)", level: 45 },
+{ name: "AI Agents", level: 45 },
+],
+},
+
+{
+category: "NLP & Computer Vision",
+icon: Cpu,
+accent: "from-neon-purple to-neon-blue",
+skills: [
+{ name: "Transformers (BERT / DistilBERT)", level: 78 },
+{ name: "OCR (DocTR / TrOCR / EasyOCR)", level: 86 },
+{ name: "Document Layout Analysis", level: 80 },
+{ name: "Computer Vision", level: 82 },
+{ name: "Kannada / Indic NLP", level: 76 },
+{ name: "Sentiment & Sarcasm Detection", level: 78 },
+{ name: "Medical Image Analysis", level: 74 },
+],
+},
+
+{
+category: "Data Science & Analytics",
+icon: LineChart,
+accent: "from-neon-cyan to-neon-blue",
+skills: [
+{ name: "Pandas & NumPy", level: 88 },
+{ name: "Matplotlib / Seaborn", level: 84 },
+{ name: "Plotly", level: 78 },
+{ name: "Streamlit", level: 80 },
+{ name: "EDA & Feature Engineering", level: 82 },
+{ name: "Statistics", level: 65 },
+{ name: "Power BI", level: 45 },
+{ name: "Tableau", level: 40 },
+],
+},
+
+{
+category: "MLOps & Deployment",
+icon: Server,
+accent: "from-neon-cyan to-neon-purple",
+skills: [
+{ name: "FastAPI", level: 82 },
+{ name: "Docker", level: 62 },
+{ name: "Git & GitHub", level: 85 },
+{ name: "Linux", level: 65 },
+{ name: "MLflow / W&B", level: 40 },
+{ name: "CI/CD (GitHub Actions)", level: 42 },
+{ name: "HuggingFace Spaces", level: 60 },
+{ name: "Streamlit Cloud / Render", level: 58 },
+],
+},
+
+{
+category: "Development & Tools",
+icon: Globe,
+accent: "from-neon-blue to-neon-violet",
+skills: [
+{ name: "React.js", level: 65 },
+{ name: "Tailwind CSS", level: 70 },
+{ name: "Gradio", level: 80 },
+{ name: "Google Colab", level: 90 },
+{ name: "Jupyter Notebook", level: 90 },
+{ name: "VS Code", level: 88 },
+{ name: "Postman", level: 75 },
+{ name: "Microsoft Excel", level: 80 },
+{ name: "Salesforce CRM", level: 65 },
+{ name: "Apex & Salesforce Flows", level: 60 },
+],
+},
+
+{
+category: "Databases",
+icon: Database,
+accent: "from-neon-pink to-neon-purple",
+skills: [
+{ name: "PostgreSQL", level: 62 },
+{ name: "MySQL", level: 65 },
+{ name: "MongoDB", level: 48 },
+{ name: "SQLite", level: 70 },
+{ name: "ChromaDB / Vector Databases", level: 52 },
+{ name: "Redis", level: 40 },
+],
+},
 ];
 
 // ─────────────────────────────────────────────
 //  PROJECTS
 // ─────────────────────────────────────────────
 export type ProjectCategory =
-  | "AI/ML"
-  | "NLP"
-  | "Computer Vision"
-  | "Data Science"
-  | "Full-Stack"
-  | "MLOps"
-  | "Software Engineering";
+| "AI/ML"
+| "NLP"
+| "Computer Vision"
+| "Enterprise Software"
+| "Salesforce"
+| "Data Science";
 
 export type Project = {
   slug: string;
@@ -211,24 +222,39 @@ export const projects: Project[] = [
   // ── EXISTING PROJECTS (upgraded with better descriptions) ──
 
   {
-    slug: "ocr-document-intelligence",
-    title: "Template-Based Intelligent Document Processing System",
-    category: "AI/ML",
-    description:
-      "Production-grade document intelligence pipeline that extracts structured data from " +
-      "business forms using multi-model OCR ensemble with confidence-based validation and " +
-      "a scalable FastAPI backend.",
-    achievements: [
-      "Ensemble of TrOCR + DocTR + EasyOCR with ORB feature matching and homography for document alignment",
-      "Confidence-based field validation — flagging low-confidence extractions for human review",
-      "FastAPI async backend with file upload, job queue, and structured JSON output",
-      "Achieved 91.3% field extraction accuracy vs 74% single-model baseline on 3,000 test forms",
-      "Tailwind CSS review UI for human-in-the-loop correction of low-confidence fields",
-    ],
-    tech: [
-      "Python", "FastAPI", "OpenCV", "TrOCR", "DocTR", "EasyOCR",
-      "HuggingFace Transformers", "HTML", "Tailwind CSS", "JavaScript",
-    ],
+slug: "document-intelligence-studio-v2",
+title: "Document Intelligence Studio V2",
+category: "AI/ML",
+
+
+description:
+  "AI-powered document intelligence platform developed to automate extraction, validation, alignment, and processing of information from scanned forms and multi-page documents using OCR and computer vision techniques.",
+
+achievements: [
+  "Developed document alignment and preprocessing pipelines using computer vision techniques",
+  "Integrated TrOCR, DocTR, and EasyOCR for intelligent document processing",
+  "Built template creation and field mapping workflows for structured extraction",
+  "Implemented batch document processing and validation mechanisms",
+  "Developed FastAPI backend services and React-based interfaces for document management"
+],
+
+tech: [
+  "Python",
+  "FastAPI",
+  "React",
+  "OpenCV",
+  "TrOCR",
+  "DocTR",
+  "EasyOCR",
+  "Docker",
+  "Hugging Face Transformers",
+  "JavaScript",
+  "HTML",
+  "CSS",
+  "Prometheus",
+  "Grafana",
+  "PDF Processing"
+],
     github: "",   // ← add GitHub link
     demo: "",     // ← add live URL
     gradient: "from-amber-500/30 via-orange-500/20 to-yellow-500/30",
@@ -241,160 +267,295 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "kannada-sarcasm-detection",
-    title: "Kannada Sarcasm Detection (EmoBhaava)",
-    category: "NLP",
-    description:
-      "Deep learning framework for sarcasm and sentiment analysis in Kannada and " +
-      "code-mixed text, combining hybrid Transformer + rule-based architecture with a " +
-      "4,200-sample annotated dataset.",
-    achievements: [
-      "Curated 4,200-sample annotated Kannada sarcasm dataset — publicly available",
-      "Hybrid Transformer + rule-based system with contextual refinement for code-mixed text",
-      "Achieved 84.2% F1 vs 71.3% zero-shot BERT baseline",
-      "Flask web app for real-time sarcasm analysis of single comments and bulk datasets",
-      "Accepted March–September 2025",
+slug: "cloud-based-naac-system",
+title: "Cloud-Based NAAC Data Management System",
+category: "Enterprise Software",
+
+
+description:
+  "Centralized cloud-based platform for managing accreditation documents, institutional records, workflows, and secure collaboration with role-based access control and advanced search capabilities.",
+
+achievements: [
+  "Developed secure document management and workflow platform",
+  "Implemented authentication and authorization using Keycloak",
+  "Integrated MeiliSearch for fast document discovery",
+  "Containerized services using Docker",
+  "Built scalable backend architecture with PostgreSQL and MinIO"
+],
+
+tech: [
+  "Django",
+  "Django REST Framework",
+  "React",
+  "PostgreSQL",
+  "Docker",
+  "Keycloak",
+  "MinIO",
+  "MeiliSearch",
+  "JWT",
+  "OIDC",
+  "RBAC",
+  "Audit Logging"
+],
+gradient: "from-violet-500/30 via-purple-500/20 to-indigo-500/30",
+    emoji: "🏛️",
+    emojiImage: "/projects/naac-1.png",
+    images: [
+      "/projects/naac-1.png",
+      "/projects/naac-2.png",
+      "/projects/naac-3.png",
     ],
-    tech: [
-      "Python", "TensorFlow", "Transformers", "Flask", "Pandas", "NumPy",
-    ],
-    github: "",   // ← add GitHub link
-    demo: "",
-    gradient: "from-violet-500/30 via-purple-500/20 to-indigo-500/30",
-    emoji: "Kannada-1.png",
-    emojiImage: "/projects/Kannada-1.png",
+  },
+  {
+  slug: "emobhaava-kannada-sarcasm",
+  title: "EmoBhaava – Kannada Sarcasm & Sentiment Analysis",
+  category: "NLP",
+
+
+  description:
+    "Multilingual NLP application for sarcasm and sentiment detection in Kannada, Romanized Kannada, and Kannada-English code-mixed text using transformer-based architectures.",
+
+  achievements: [
+    "Developed transformer-based sarcasm and sentiment detection models",
+    "Worked with multilingual and code-mixed social media datasets",
+    "Implemented REST APIs and batch prediction workflows",
+    "Built web interfaces for real-time inference",
+    "Containerized deployment using Docker"
+  ],
+
+  tech: [
+    "Python",
+    "PyTorch",
+    "XLM-RoBERTa",
+    "Transformers",
+    "Flask",
+    "Docker",
+    "REST API",
+    "Pandas",
+    "NumPy",
+    "NLP"
+  ],
+
+  github: "",
+  demo: "",
+  gradient: "from-violet-500/30 via-purple-500/20 to-indigo-500/30",
+  emoji: "Kannada-1.png",
+  emojiImage: "/projects/Kannada-1.png",
     images: [
       "/projects/Kannada-1.png",
       "/projects/Kannada-2.png",
-      "/projects/Kannada-3.png",
+      
+    ],
+
+
+  },
+  // 4. DOCUMENT INTELLIGENCE STUDIO V1
+
+{
+slug: "document-intelligence-studio-v1",
+title: "Document Intelligence Studio V1",
+category: "AI/ML",
+
+
+description:
+  "Initial version of a document processing platform focused on OCR-driven extraction, document alignment, template matching, and structured information retrieval.",
+
+achievements: [
+  "Implemented OCR-based information extraction workflows",
+  "Built document alignment and correction pipelines",
+  "Integrated multiple OCR engines for experimentation",
+  "Developed automated extraction pipelines for structured forms"
+],
+
+tech: [
+  "Python",
+  "FastAPI",
+  "OpenCV",
+  "TrOCR",
+  "DocTR",
+  "EasyOCR",
+  "PyTorch",
+  "Template Matching",
+  "PDF Processing"
+],
+
+github: "",
+demo: "",
+gradient: "from-orange-500/30 via-yellow-500/20 to-amber-500/30",
+emoji: "docv1.png",
+emojiImage: "/projects/form-extraction-4.jpeg",
+    images: [
+      "/projects/form-extraction-4.jpeg",
+      "/projects/form-extraction-5.jpeg",
+      "/projects/form-extraction-6.jpeg",
     ],
   },
-  {
-    slug: "alzheimers-mri-classification",
-    title: "Alzheimer's Disease Prediction using MRI & Clinical Data",
-    category: "Computer Vision",
-    description:
-      "End-to-end ML/DL pipeline predicting Alzheimer's stages from MRI scans and " +
-      "clinical data using MobileNetV2 transfer learning, deployed as an interactive " +
-      "Streamlit web application.",
-    achievements: [
-      "MobileNetV2 transfer learning on OASIS-3 dataset — 78.9% accuracy, F1=0.81, ROC-AUC=0.91",
-      "Multi-modal fusion: MRI image features + structured clinical data",
-      "Streamlit app with MRI upload, stage prediction, and real-time visualisation",
-      "Integrated result logging and GitHub version control",
-      "Grad-CAM visualisation showing which brain regions influence prediction",
-    ],
-    tech: [
-      "Python", "TensorFlow", "Streamlit", "OpenCV", "Scikit-learn", "Pandas",
-    ],
-    github: "",   // ← add GitHub link
-    demo: "",     // ← add HuggingFace Spaces or Render URL
-    gradient: "from-cyan-500/30 via-sky-500/20 to-emerald-500/30",
-    emoji: "alzheimers-1.png",
-    emojiImage: "/projects/alzheimers-1.png",
+// 5. ALZHEIMER'S
+
+{
+slug: "alzheimers-disease-prediction",
+title: "Alzheimer's Disease Prediction using MRI Data",
+category: "Computer Vision",
+
+
+description:
+  "Machine learning and deep learning system for Alzheimer's disease prediction using MRI scans and clinical information with interactive deployment interfaces.",
+
+achievements: [
+  "Developed MRI image classification pipeline",
+  "Implemented transfer learning for medical image analysis",
+  "Built Streamlit-based prediction interface",
+  "Developed API endpoints for model inference",
+  "Containerized deployment workflows using Docker"
+],
+
+tech: [
+  "Python",
+  "TensorFlow",
+  "FastAPI",
+  "Streamlit",
+  "Docker",
+  "Scikit-learn",
+  "OpenCV",
+  "Pandas",
+  "NumPy",
+  "Medical Imaging"
+],
+
+github: "",
+demo: "",
+gradient: "from-cyan-500/30 via-sky-500/20 to-emerald-500/30",
+emoji: "alzheimers-1.png",
+emojiImage: "/projects/alzheimers-1.png",
+
     images: [
       "/projects/alzheimers-1.png",
       "/projects/alzheimers-2.png",
-      "/projects/alzheimers-3.png",
+      
     ],
-  },
+},
 
-  // ── PROJECTS TO BUILD (add as you complete them) ──
+// 6. STELLAR WATCH
 
-  {
-    slug: "kannada-legal-rag",
-    title: "Kannada Legal Document Q&A (RAG System)",
-    category: "AI/ML",
-    description:
-      "Retrieval-Augmented Generation system over Karnataka High Court judgements " +
-      "using multilingual embeddings (BAAI/bge-m3) that supports queries in both " +
-      "Kannada and English with cited answers.",
-    achievements: [
-      "Ingestion pipeline over 20+ Karnataka HC judgements using PyPDF + LangChain",
-      "BAAI/bge-m3 multilingual embeddings — supports Kannada and English queries natively",
-      "Hybrid retrieval: semantic search (ChromaDB) + BM25 keyword search via EnsembleRetriever",
-      "RAGAS evaluation: Faithfulness=0.87, Context Precision=0.79, Context Recall=0.83",
-      "Deployed on HuggingFace Spaces with Gradio UI showing cited source chunks",
+{
+slug: "stellar-watch",
+title: "Stellar Watch",
+category: "Data Science",
+
+
+description:
+  "Astronomy-focused data visualization and analysis platform for exploring celestial data and observational insights.",
+
+achievements: [
+  "Processed astronomical datasets",
+  "Performed exploratory data analysis",
+  "Built interactive visualizations",
+  "Developed data-driven insights from celestial observations"
+],
+
+tech: [
+  "Python",
+  "Pandas",
+  "NumPy",
+  "Matplotlib",
+  "Data Analysis"
+],
+
+github: "",
+demo: "",
+gradient: "from-indigo-500/30 via-purple-500/20 to-blue-500/30",
+emoji: "stellar.png",
+emojiImage: "/projects/stellar-1.png",
+images: [
+      "/projects/stellar-1.png",
+      "/projects/stellar-2.png",
+      "/projects/stellar-3.png",
     ],
-    tech: [
-      "Python", "LangChain", "ChromaDB", "BAAI/bge-m3", "Groq API",
-      "RAGAS", "Gradio", "FastAPI", "HuggingFace Spaces",
+
+
+},
+
+// 7. HELMET DETECTION
+
+{
+slug: "helmet-detection-system",
+title: "Helmet Detection System",
+category: "Computer Vision",
+
+
+description:
+  "Computer vision application for detecting helmet compliance using image processing and deep learning techniques.",
+
+achievements: [
+  "Developed helmet detection workflow",
+  "Performed image preprocessing and feature extraction",
+  "Implemented computer vision-based detection pipeline",
+  "Evaluated model performance on traffic imagery"
+],
+
+tech: [
+  "Python",
+  "OpenCV",
+  "TensorFlow",
+  "Computer Vision",
+  "Image Processing"
+],
+
+github: "",
+demo: "",
+gradient: "from-green-500/30 via-teal-500/20 to-cyan-500/30",
+emoji: "helmet.png",
+emojiImage: "/projects/helmet-1.jpeg",
+images: [
+      "/projects/helmet-1.jpeg",
+      "/projects/helmet-2.jpeg",
+     
     ],
-    github: "",   // ← fill after building
-    demo: "",
-    gradient: "from-rose-500/30 via-pink-500/20 to-red-500/30",
-    emoji: "legal-1.png",
-    emojiImage: "/projects/legal-1.png",
-    images: [
-      "/projects/legal-1.png",
-      "/projects/legal-2.png",
-      "/projects/legal-3.png",
+
+},
+
+// 8. SALESFORCE CRM
+
+{
+slug: "whatnext-vision-motors-crm",
+title: "WhatNext Vision Motors CRM",
+category: "Salesforce",
+
+
+description:
+  "Salesforce CRM solution developed for vehicle ordering, inventory management, dealer allocation, workflow automation, and customer relationship management.",
+
+achievements: [
+  "Designed custom Salesforce data model and object relationships",
+  "Implemented Apex classes, triggers, schedulers, and validation logic",
+  "Automated dealer assignment and inventory validation workflows",
+  "Developed dashboards, reports, and role-based access controls",
+  "Built scalable CRM processes for order management and customer engagement"
+],
+
+tech: [
+  "Salesforce",
+  "Apex",
+  "Batch Apex",
+  "Triggers",
+  "Flows",
+  "Validation Rules",
+  "Dashboards",
+  "Reports",
+  "CRM Automation"
+],
+
+github: "www.github.com/salesforce-crm",
+demo: "",
+gradient: "from-sky-500/30 via-blue-500/20 to-cyan-500/30",
+emoji: "salesforce.png",
+emojiImage: "/projects/salesforce-1.png",
+images: [
+      "/projects/salesforce-1.png",
+      
     ],
-  },
-  {
-    slug: "distributed-rate-limiter",
-    title: "Distributed Rate Limiter Library",
-    category: "Software Engineering",
-    description:
-      "Production-grade Python library implementing four rate limiting algorithms " +
-      "(token bucket, leaky bucket, fixed window, sliding window log) with atomic " +
-      "Redis Lua scripts for distributed correctness. Published to PyPI.",
-    achievements: [
-      "Four algorithms: token bucket, leaky bucket, fixed window counter, sliding window log",
-      "Redis Lua scripts for atomic check-and-increment — race-condition-proof under concurrent load",
-      "FastAPI middleware: one-line integration via @limiter.limit('10/minute') decorator",
-      "RFC 6585 compliant 429 responses with X-RateLimit-* and Retry-After headers",
-      "Concurrency test: 50 simultaneous requests against limit=10 — exactly 10 allowed, 100% of runs",
-      "Locust benchmark: 50,000 rate-limited requests/sec, P99 latency < 2ms",
-      "Published to PyPI with GitHub Actions CI, 95%+ test coverage, ReadTheDocs documentation",
-    ],
-    tech: [
-      "Python", "Redis", "Lua", "FastAPI", "Docker", "pytest",
-      "testcontainers", "GitHub Actions", "PyPI", "Locust",
-    ],
-    github: "",   // ← fill after building
-    demo: "",
-    gradient: "from-emerald-500/30 via-green-500/20 to-teal-500/30",
-    emoji: "drl-1.png",
-    emojiImage: "/projects/drl-1.png",
-    images: [
-      "/projects/drl-1.png",
-      "/projects/drl-2.png",
-      "/projects/drl-3.png",
-    ],
-  },
-  {
-    slug: "price-elasticity-engine",
-    title: "Price Elasticity Engine with Causal Inference",
-    category: "Data Science",
-    description:
-      "Statistical engine estimating causal demand elasticity per product category " +
-      "using instrumental variables (IV2SLS) on 100K+ e-commerce orders — with an " +
-      "interactive Plotly Dash revenue simulation dashboard.",
-    achievements: [
-      "Instrumental variables (IV2SLS via linearmodels) to eliminate endogeneity bias in price-demand estimation",
-      "EconML CausalForest for heterogeneous per-SKU elasticity — not a single average",
-      "Bootstrap confidence intervals: elasticity reported as −1.4 (95% CI: −1.8 to −1.1)",
-      "dbt transformation layer over Olist 100K+ e-commerce orders in PostgreSQL",
-      "Revenue simulation dashboard (Plotly Dash): drag price slider → see ₹ impact with CI",
-      "OLS vs IV side-by-side comparison proving naive regression is biased",
-      "3-page stakeholder report with pricing recommendations and expected revenue impact",
-    ],
-    tech: [
-      "Python", "DoWhy", "EconML", "linearmodels", "dbt",
-      "PostgreSQL", "Plotly Dash", "Pandas", "Scikit-learn",
-    ],
-    github: "",
-    demo: "",
-    gradient: "from-indigo-500/30 via-blue-500/20 to-violet-500/30",
-    emoji: "pee-1.png",
-    emojiImage: "/projects/pee-1.png",
-    images: [
-      "/projects/pee-1.png",
-      "/projects/pee-2.png",
-      "/projects/pee-3.png",
-    ],
-  },
+}
+
 ];
 
 // ─────────────────────────────────────────────
@@ -464,8 +625,8 @@ export const education: EducationItem[] = [
   {
     degree: "B.E. — Computer Science & Data Science",
     institution: "St. Joseph Engineering College, Mangaluru",
-    duration: "2022 – Present",
-    score: "CGPA: 9.81",
+    duration: "2022 – 2026",
+    score: "CGPA: 9.79",
     coursework: [
       "Machine Learning",
       "Deep Learning",
@@ -480,14 +641,14 @@ export const education: EducationItem[] = [
     ],
   },
   {
-    degree: "Class XII — Pre-University Course (PCMC)",
+    degree: "Class XII — Pre-University Course (PCMB)",
     institution: "M.G.M PU College, Udupi",
     duration: "2020 – 2022",
     score: "94.17%",
-    coursework: ["Physics", "Chemistry", "Mathematics", "Computer Science"],
+    coursework: ["Physics", "Chemistry", "Mathematics", "Biology"],
   },
   {
-    degree: "Class X — SSLC",
+    degree: "SSLC",
     institution: "St. Cecily's Institutions",
     duration: "2019 – 2020",
     score: "96.64%",
@@ -506,7 +667,7 @@ export type Certification = {
     | "Data Science"
     | "Cloud"
     | "Salesforce"
-    | "Software Engineering"
+    | "Software Engineering" | "Cybersecurity"
     | "Other";
   year: string;
   gradient: string;
@@ -515,69 +676,149 @@ export type Certification = {
 };
 
 export const certifications: Certification[] = [
-  // ── EXISTING ──
-  {
-    title: "Generative AI Professional — AI Foundations Associate",
-    issuer: "Oracle Cloud Infrastructure (OCI)",
-    category: "AI/ML",
-    year: "2025",
-    gradient: "from-purple-500/40 to-fuchsia-500/30",
-    image: "/certificates/oracle-genai-professional.png",
-  },
-  {
-    title: "Developer Catalyst V3.0 — Administrator Explorer",
-    issuer: "Salesforce",
-    category: "Salesforce",
-    year: "2025",
-    gradient: "from-blue-500/40 to-cyan-500/30",
-    image: "/certificates/salesforce-developer-catalyst.png",
-  },
-  {
-    title: "Data Science 101 — Data Analysis with Python",
-    issuer: "IBM Developer Skills Network",
-    category: "Data Science",
-    year: "2024",
-    gradient: "from-rose-500/40 to-orange-500/30",
-    image: "/certificates/ibm-data-science.png",
-  },
-  {
-    title: "Participated in mBAIA (Jan 2024 & 2025)",
-    issuer: "SAEINDIA",
-    category: "Other",
-    year: "2024–2025",
-    gradient: "from-emerald-500/40 to-teal-500/30",
-    image: "/certificates/saeindia-mbaia.png",
-  },
+// ─────────────────────────────────────────────
+// TOP INDUSTRY CERTIFICATIONS
+// ─────────────────────────────────────────────
 
-  // ── TO COMPLETE (add images when earned) ──
-  {
-    title: "Machine Learning Specialization",
-    issuer: "DeepLearning.AI / Coursera",
-    category: "AI/ML",
-    year: "2026",          // ← update when earned
-    gradient: "from-cyan-500/40 to-sky-500/30",
-    image: "/certificates/deeplearning-ml-spec.png",
-    credentialUrl: "https://coursera.org/",
-  },
-  {
-    title: "Google Data Analytics Professional Certificate",
-    issuer: "Google / Coursera",
-    category: "Data Science",
-    year: "2026",
-    gradient: "from-indigo-500/40 to-blue-500/30",
-    image: "/certificates/google-data-analytics.png",
-    credentialUrl: "https://coursera.org/",
-  },
-  {
-    title: "Meta Backend Developer Professional Certificate",
-    issuer: "Meta / Coursera",
-    category: "Software Engineering",
-    year: "2026",
-    gradient: "from-violet-500/40 to-purple-500/30",
-    image: "/certificates/meta-backend.png",
-    credentialUrl: "https://coursera.org/",
-  },
+{
+title: "OCI 2025 Generative AI Professional",
+issuer: "Oracle Cloud Infrastructure",
+category: "AI/ML",
+year: "2025",
+gradient: "from-purple-500/40 to-fuchsia-500/30",
+image: "/certificates/oci-generative-ai-professional.png",
+},
+
+{
+title: "OCI 2025 AI Foundations Associate",
+issuer: "Oracle Cloud Infrastructure",
+category: "AI/ML",
+year: "2025",
+gradient: "from-violet-500/40 to-purple-500/30",
+image: "/certificates/oci-ai-foundations-associate.png",
+},
+
+{
+title: "OCI 2025 Foundations Associate",
+issuer: "Oracle Cloud Infrastructure",
+category: "Cloud",
+year: "2025",
+gradient: "from-indigo-500/40 to-blue-500/30",
+image: "/certificates/oci-foundations-associate.png",
+},
+
+{
+title: "Agentblazer Champion Program",
+issuer: "Salesforce",
+category: "Salesforce",
+year: "2025",
+gradient: "from-cyan-500/40 to-blue-500/30",
+image: "/certificates/salesforce-agentblazer-champion.png",
+},
+
+{
+title: "Developer Catalyst V3.0",
+issuer: "Salesforce",
+category: "Salesforce",
+year: "2025",
+gradient: "from-blue-500/40 to-cyan-500/30",
+image: "/certificates/salesforce-developer-catalyst.png",
+},
+
+{
+title: "Administrator Explorer",
+issuer: "Salesforce",
+category: "Salesforce",
+year: "2025",
+gradient: "from-sky-500/40 to-cyan-500/30",
+image: "/certificates/salesforce-administrator-explorer.png",
+},
+
+// ─────────────────────────────────────────────
+// NPTEL CERTIFICATIONS
+// ─────────────────────────────────────────────
+
+{
+title: "Foundation of Cloud IoT Edge ML (Elite)",
+issuer: "NPTEL",
+category: "AI/ML",
+year: "2024",
+gradient: "from-purple-500/40 to-indigo-500/30",
+image: "/certificates/nptel-cloud-iot-edge-ml.png",
+},
+
+{
+title: "Large Applications Practicum (Elite)",
+issuer: "NPTEL",
+category: "Software Engineering",
+year: "2024",
+gradient: "from-blue-500/40 to-violet-500/30",
+image: "/certificates/nptel-large-applications-practicum.png",
+},
+
+// ─────────────────────────────────────────────
+// IBM PROFESSIONAL COURSES
+// ─────────────────────────────────────────────
+
+{
+title: "Data Analysis with Python",
+issuer: "IBM Skills Network",
+category: "Data Science",
+year: "2024",
+gradient: "from-orange-500/40 to-amber-500/30",
+image: "/certificates/ibm-data-analysis-python.png",
+},
+
+{
+title: "Data Science 101",
+issuer: "IBM Skills Network",
+category: "Data Science",
+year: "2024",
+gradient: "from-rose-500/40 to-orange-500/30",
+image: "/certificates/ibm-data-science-101.png",
+},
+
+{
+title: "Big Data 101",
+issuer: "IBM Skills Network",
+category: "Data Science",
+year: "2024",
+gradient: "from-red-500/40 to-orange-500/30",
+image: "/certificates/ibm-big-data-101.png",
+},
+
+{
+title: "Tools for Data Science",
+issuer: "IBM Skills Network",
+category: "Data Science",
+year: "2024",
+gradient: "from-pink-500/40 to-rose-500/30",
+image: "/certificates/ibm-tools-for-data-science.png",
+},
+
+{
+title: "Project Management Fundamentals",
+issuer: "IBM Skills Network",
+category: "Other",
+year: "2024",
+gradient: "from-emerald-500/40 to-green-500/30",
+image: "/certificates/ibm-project-management-fundamentals.png",
+},
+
+// ─────────────────────────────────────────────
+// CYBERSECURITY
+// ─────────────────────────────────────────────
+
+{
+title: "Introduction to Cybersecurity",
+issuer: "Cisco Networking Academy",
+category: "Cybersecurity",
+year: "2024",
+gradient: "from-teal-500/40 to-cyan-500/30",
+image: "/certificates/cisco-introduction-to-cybersecurity.png",
+},
 ];
+
 
 // ─────────────────────────────────────────────
 //  COURSES (learning history + in progress)
